@@ -2,5 +2,7 @@
 
 ```js
 npx create-react-app
-npm install react-router-dom
+// react router version 5 is more stable than version 6
+
+npm install react-router-dom@5 
 ```
