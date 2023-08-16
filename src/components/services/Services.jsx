@@ -8,7 +8,7 @@ import logoDesignImg from '../../images/logo-design.png'
 
 const Services = () => {
   return (
-    <>
+  
     <div className='sevices'>
 
     <div className='servicesTitle'>
@@ -21,7 +21,7 @@ const Services = () => {
         <section className='servicesSection section1'>
             <div className='triangle1'/>
             <img src={logoDesignImg} alt='Logo Design Image' className='servicesImg' />
-            <h4 className='servicesTitle'>Logo Design</h4>
+            <h4 className='serviceTitle'>Logo Design</h4>
         </section>
 
         <section className='servicesSection section2'>
@@ -45,7 +45,7 @@ const Services = () => {
     </div>
 
     </div>
-    </>
+
   )
 }
 

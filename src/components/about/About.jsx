@@ -5,7 +5,7 @@ import imgTeam from '../../images/Team.png';
 
 const About = () => {
   return (
-    <>
+
     <div className="grid-container">
 
     <div className="section s1">
@@ -37,7 +37,7 @@ const About = () => {
     </div>
 
     </div>
-    </>
+ 
   )
 }
 

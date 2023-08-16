@@ -3,10 +3,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 34px;
+    margin-top: 30px;
 }
 
 h2{
-    font-size: 14px;
+    font-size: 34px;
 }
 
 .btnS{
@@ -14,7 +16,7 @@ h2{
     display: inline-block;
     outline: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 24px;
     border-radius: 500px;
     transition-duration: .3s;
     border: 1px solid transparent;
@@ -38,8 +40,10 @@ h2{
     justify-content: center;
     grid-template-columns: repeat(4, 1fr); /* Divides the screen into two columns */
     gap: 20px; 
-    height: 100vh; 
+    column-gap: 40px;
+    margin-bottom: 50px;
     width: auto;
+    align-items: center;
   }
   .servicesSection {
     border: 0.5px solid #000000;
@@ -50,52 +54,75 @@ h2{
     height: 16vh;
     font-family: 'Raleway';
     border-radius: 3px;
+    align-items: center;
+    
   }
 
   .section1, .section2, .section3, .section4{
     transition: box-shadow 0.3s;
+    position: relative;
+    box-shadow: -6px 24px 85px 0px rgba(200, 188, 188, 0.25);
   }
 
-  .section1:hover, .section2:hover, .section3:hover, .section4:hover{
-    box-shadow: 0px 0px 10px rgba(0, 5, 0, 5.5); 
+  .section1:hover .triangle1, .section2:hover .triangle2, .section3:hover .triangle3, .section4:hover .triangle4{
+    /* box-shadow: 0px 0px 10px rgba(0, 5, 0, 5.5);  */
+    rotate: -15deg;
+    left: -30px;
   }
 
   .servicesImg{
     width: 40px;
     height: 38px;
-    margin-top: 15px;
-    padding: 0%;
+    /* margin-top: 15px; */
+    padding: 0;
+    padding-top: 10px ;
   }
   .servicesTitle{
-    font-size: 12px;
+    font-weight: bold;
+    font-size: 18px;
   }
   
   .triangle1 {
     position: absolute;
-    border-right: 60px solid transparent; /* Adjust the size of the triangle */
-    border-top: 60px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
+    border-right: 70px solid transparent; /* Adjust the size of the triangle */
+    border-top: 70px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
     border-radius: 4;
+    left: -10px;
+    top: -10px;
+    border-radius: 5px;
   }
+
+  
 
   .triangle2{
     position: absolute;
-    border-right: 60px solid transparent; 
-    border-top: 60px solid #c71818; 
+    border-right: 70px solid transparent; 
+    border-top: 70px solid #c71818; 
     border-radius: 4;
+    left: -10px;
+    top: -10px;
+    border-radius: 5px;
   }
 
   .triangle3{
     position: absolute;
-    border-right: 60px solid transparent; 
-    border-top: 60px solid rgb(0, 108, 196); 
+    border-right: 70px solid transparent; 
+    border-top: 70px solid #44ABCC; 
     border-radius: 4;
+    left: -10px;
+    top: -10px;
+    border-radius: 5px;
   }
 
   .triangle4{
     position: absolute;
-    border-right: 60px solid transparent; 
-    border-top: 60px solid rgb(255, 230, 0); 
+    border-right: 70px solid transparent; 
+    border-top: 70px solid #FAD02C;
+   
     border-radius: 4;
+    left: -10px;
+    top: -10px;
+    border-radius: 5px;
   }
 
 
