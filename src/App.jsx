@@ -4,6 +4,8 @@ import { BrowserRouter as Router ,
    import Home from "./components/home/Home";
    import About from './components/about/About';
    import Navbar from './components/navbar/Navbar';
+   import Services from './components/services/Services';
+
 function App() {
   return (
     <Router>
@@ -15,6 +17,9 @@ function App() {
       </Route>
       <Route path='/about'>
         <About />
+      </Route>
+      <Route path='/services'>
+        <Services/>
       </Route>
     </Switch>
     </div>

@@ -1,0 +1,291 @@
+.servicesTitle{
+    font-family: 'Raleway';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    font-size: 14px;
+}
+
+.btnS{
+    font-family: 'Raleway';
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 500px;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    min-width: 30px;
+    white-space: normal;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    background-color: #c71818;
+    height: 40px;
+    width: 130px;
+    margin-left: 10px;
+}
+.btnS:hover{
+    background-color: #000000;
+} 
+
+.container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr); /* Divides the screen into two columns */
+    gap: 20px; 
+    height: 100vh; 
+    width: auto;
+  }
+  .servicesSection {
+    border: 0.5px solid #000000;
+    display: block;
+    width: 26vh;
+    height: 16vh;
+    font-family: 'Raleway';
+    border-radius: 3px;
+  }
+
+  .section1, .section2, .section3, .section4{
+    transition: box-shadow 0.3s;
+  }
+
+  .section1:hover, .section2:hover, .section3:hover, .section4:hover{
+    box-shadow: 0px 0px 10px rgba(0, 5, 0, 5.5); 
+  }
+
+
+  .servicesImg{
+    width: 40px;
+    height: 38px;
+    margin-top: 15px;
+    padding: 0%;
+  }
+  .servicesTitle{
+    font-size: 12px;
+  }
+  
+  .triangle1 {
+    position: absolute;
+    border-right: 60px solid transparent; /* Adjust the size of the triangle */
+    border-top: 60px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
+    border-radius: 4;
+  }
+
+  .triangle2{
+    position: absolute;
+    border-right: 60px solid transparent; 
+    border-top: 60px solid #c71818; 
+    border-radius: 4;
+  }
+
+  .triangle3{
+    position: absolute;
+    border-right: 60px solid transparent; 
+    border-top: 60px solid rgb(0, 108, 196); 
+    border-radius: 4;
+  }
+
+  .triangle4{
+    position: absolute;
+    border-right: 60px solid transparent; 
+    border-top: 60px solid rgb(255, 230, 0); 
+    border-radius: 4;
+  }
+
+
+
+
+  
+  /* Smaller*/
+  @media (max-width: 920px) {
+    .container {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr); /* Divides the screen into two columns */
+        gap: 15px; 
+        height: 100vh; 
+        width: auto;
+      }
+    .servicesSection {
+        border: 0.5px solid #000000;
+        display: block;
+        width: 24vh;
+        height: 14vh;
+        font-family: 'Raleway';
+        border-radius: 3px;
+      }
+    
+    .servicesImg{
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+        padding: 0%;
+      }
+      .servicesTitle{
+        font-size: 11px;
+      }
+      .triangle1 {
+        position: absolute;
+        border-right: 50px solid transparent; /* Adjust the size of the triangle */
+        border-top: 50px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
+        border-radius: 4;
+      }
+    
+      .triangle2{
+        position: absolute;
+        border-right: 50px solid transparent; 
+        border-top: 50px solid #c71818; 
+        border-radius: 4;
+      }
+    
+      .triangle3{
+        position: absolute;
+        border-right: 50px solid transparent; 
+        border-top: 50px solid rgb(0, 108, 196); 
+        border-radius: 4;
+      }
+    
+      .triangle4{
+        position: absolute;
+        border-right: 50px solid transparent; 
+        border-top: 50px solid rgb(255, 230, 0); 
+        border-radius: 4;
+      }
+    
+  }
+
+
+
+
+
+
+
+
+  /*More Small*/
+  @media (max-width: 720px) {
+    .container {
+        display: inline-block;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        width: auto;
+      }
+    .servicesSection {
+        border: 0.5px solid #000000;
+        margin-top: 35px;
+        width: 30vh;
+        height: 18vh;
+        font-family: 'Raleway';
+        border-radius: 3px;
+      }
+    
+    .servicesImg{
+        width: 45px;
+        height: 46px;
+        margin-top: 10px;
+        padding: 0%;
+      }
+      .servicesTitle{
+        font-size: 18px;
+      }
+      .triangle1 {
+        position: absolute;
+        border-right: 70px solid transparent; /* Adjust the size of the triangle */
+        border-top: 70px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
+        border-radius: 4;
+      }
+    
+      .triangle2{
+        position: absolute;
+        border-right: 70px solid transparent; 
+        border-top: 70px solid #c71818; 
+        border-radius: 4;
+      }
+    
+      .triangle3{
+        position: absolute;
+        border-right: 70px solid transparent; 
+        border-top: 70px solid rgb(0, 108, 196); 
+        border-radius: 4;
+      }
+    
+      .triangle4{
+        position: absolute;
+        border-right: 70px solid transparent; 
+        border-top: 70px solid rgb(255, 230, 0); 
+        border-radius: 4;
+      }
+    
+  }
+
+
+
+
+
+
+
+
+  /*Phone device*/
+  @media (max-width: 590px) {
+    .container {
+        display: inline-block;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        width: auto;
+      }
+    .servicesSection {
+        border: 0.5px solid #000000;
+        margin-top: 35px;
+        width: 30vh;
+        height: 18vh;
+        font-family: 'Raleway';
+        border-radius: 3px;
+      }
+    
+    .servicesImg{
+        width: 50px;
+        height: 45px;
+        margin-top: 10px;
+        padding: 0%;
+      }
+      .servicesTitle{
+        font-size: 16px;
+      }
+      .triangle1 {
+        position: absolute;
+        border-right: 70px solid transparent; /* Adjust the size of the triangle */
+        border-top: 70px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
+        border-radius: 4;
+      }
+    
+      .triangle2{
+        position: absolute;
+        border-right: 70px solid transparent; 
+        border-top: 70px solid #c71818; 
+        border-radius: 4;
+      }
+    
+      .triangle3{
+        position: absolute;
+        border-right: 70px solid transparent; 
+        border-top: 70px solid rgb(0, 108, 196); 
+        border-radius: 4;
+      }
+    
+      .triangle4{
+        position: absolute;
+        border-right: 70px solid transparent; 
+        border-top: 70px solid rgb(255, 230, 0); 
+        border-radius: 4;
+      }
+    
+  }

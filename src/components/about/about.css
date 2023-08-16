@@ -1,0 +1,171 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr);    /* Two rows */
+    gap: 0px; /* Gap between grid items */
+    width: 100%;
+    height: 60vh;
+  }
+  
+.section {
+    border: 0.5px solid #ccc;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 60vh;
+    font-family: 'Raleway';
+    text-align: center;
+  }
+  
+.s1, .s4{
+    background-color: rgb(241, 240, 240);
+}  
+
+.s2, .s3{
+    display:block;
+}
+
+.s2 h2, .s3 h2{
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.s2 p, .s3 p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 15px;
+}
+
+.img{
+    width: 100%;
+}
+
+.btn{
+    font-family: 'Raleway';
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 500px;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    min-width: 30px;
+    white-space: normal;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    background-color: #c71818;
+    height: 40px;
+    width: 130px;
+    margin-bottom: 60px;
+}
+.btn:hover{
+    background-color: #000000;
+}
+
+/*Small Devices < 960*/
+@media (max-width: 960px) {
+    /* Adjust styles for screens below 960px width */
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-template-rows: repeat(2, 1fr);    /* Two rows */
+        gap: 0px; /* Gap between grid items */
+        width: 100%;
+        height: 70vh;
+      }
+      .section {
+        border: 0.5px solid #ccc;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 60vh;
+        font-family: 'Raleway';
+        text-align: center;
+      }
+      
+    .s2, .s3{
+        display:block;
+    }
+    
+    .s2 h2, .s3 h2{
+        margin-top: 50px;
+        font-size: 23px;
+    }
+    .s2 p, .s3 p{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .img{
+        width: 100%;
+    }
+  }
+
+
+
+  @media (max-width: 837px) {
+
+    .grid-container {
+        display:block;
+        gap: 0px; /* Gap between grid items */
+        width: 100%;
+        height: 70vh;
+      }
+    
+    .s2, .s3{
+        display:block;
+    }
+    
+    .s2 h2, .s3 h2{
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    .s2 p, .s3 p{
+        margin-top: 10px;
+        font-size: 17px;
+    }
+    .img{
+        width: 100%;
+        height: 50vh;
+    }
+    
+  }
+
+  @media (max-width: 572px) {
+    .s2 h2, .s3 h2{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .s2 p, .s3 p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .img{
+        width: 100%;
+        height: 30vh;
+    }
+  }
+
+  @media (max-width: 472px) {
+    .grid-container {
+        height: 50vh;
+    }
+    .s2 h2, .s3 h2{
+        margin-top: 27px;
+        font-size: 20px;
+    }
+    .s2 p, .s3 p{
+        margin-top: 8px;
+        font-size: 13px;
+    }
+    .img{
+        width: 100%;
+        height: 30vh;
+    }
+  }
