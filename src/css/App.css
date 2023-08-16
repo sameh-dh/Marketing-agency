@@ -1,38 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+body,
+html {
+    font-family: "Raleway";
+  
+    height: 100%;
+    width: 100vw;
+    margin: 0;  
+    padding: 0;
+    letter-spacing: 0.1rem;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
 .App {
-  text-align: center;
+    display: grid;
+}
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-points-y: repeat(100vh);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* .app-section {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
 }

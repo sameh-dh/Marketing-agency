@@ -1,0 +1,171 @@
+.HomeSection-container {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    background-color: #1F1A19;
+    height: fit-content;
+    margin-top: -35px;
+  
+   
+}
+.HomeSection-main {
+    /* opacity: 0.1; */
+    background: linear-gradient(90deg, #00000010 11.46%, rgba(131, 129, 129, 0.09) 25%, rgba(149, 148, 148, 0.139) 43.23%, rgba(255, 254, 254, 0.089) 77.08%, rgba(53, 48, 48, 0.214) 96.35%);
+    height: 100%;
+}
+
+.HomeSection-title {
+   font-family: "Raleway";
+   font-size: 45px;
+    padding-top: 120px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.HomeSection-description {
+    font-size: 25px;
+}
+
+.HomeSection-buttons button {
+    padding: 15px 16px 15px 16px;
+    font-family: "Raleway";
+    border: none;
+    color: rgb(237, 235, 235);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 100px;
+   background: #D01110;
+   box-shadow: 43px 51px 50px 0px rgba(0, 0, 0, 0.38);
+}
+
+.HomeSection-buttons {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+    width: 40%;
+    column-gap: 35px;
+    row-gap: 30px;
+    padding-bottom: 80px;
+}
+
+
+/* BREAK POINTS */
+
+@media screen and (max-width: 1600px) { 
+    .HomeSection-buttons {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .HomeSection-buttons {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1100px) { 
+    .HomeSection-buttons {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    .HomeSection-buttons {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 900px) { 
+    .HomeSection-buttons {
+        width: 95%;
+        column-gap: 20px;
+    }
+
+    .HomeSection-title {
+        font-size: 35px;
+         padding-top: 120px;
+     }
+     
+     .HomeSection-description {
+         font-size: 20px;
+     }
+     .HomeSection-buttons button {
+        padding: 15px 10px 15px 10px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .HomeSection-buttons {
+        width: 95%;
+        column-gap: 15px;
+        row-gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .HomeSection-title {
+        font-size: 35px;
+         padding-top: 100px;
+     }
+     
+     .HomeSection-description {
+         font-size: 20px;
+     }
+     .HomeSection-buttons button {
+        padding: 15px 10px 15px 10px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 600px) { 
+    .HomeSection-buttons {
+        width: 75%;
+        column-gap: 15px;
+        row-gap: 30px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        grid-template-columns: auto auto;
+    }
+
+    .HomeSection-title {
+        font-size: 25px;
+         padding-top: 100px;
+     }
+     
+     .HomeSection-description {
+         font-size: 18px;
+     }
+     .HomeSection-buttons button {
+        padding: 15px 10px 15px 10px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    .HomeSection-buttons {
+        width: 87%;
+        column-gap: 15px;
+        row-gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        grid-template-columns: auto auto;
+    }
+
+    .HomeSection-title {
+        font-size: 20px;
+         padding-top: 100px;
+       
+     }
+     
+     .HomeSection-description {
+         font-size: 16px;
+     }
+     .HomeSection-buttons button {
+        padding: 15px 10px 15px 10px;
+        font-size: 14px;
+    }
+}
