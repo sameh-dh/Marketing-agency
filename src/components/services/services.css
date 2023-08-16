@@ -32,7 +32,7 @@ h2{
     background-color: #000000;
 } 
 
-.container {
+.servicesContainer {
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -44,6 +44,8 @@ h2{
   .servicesSection {
     border: 0.5px solid #000000;
     display: block;
+    justify-content: center;
+    text-align: center;
     width: 26vh;
     height: 16vh;
     font-family: 'Raleway';
@@ -57,7 +59,6 @@ h2{
   .section1:hover, .section2:hover, .section3:hover, .section4:hover{
     box-shadow: 0px 0px 10px rgba(0, 5, 0, 5.5); 
   }
-
 
   .servicesImg{
     width: 40px;
@@ -103,7 +104,7 @@ h2{
   
   /* Smaller*/
   @media (max-width: 920px) {
-    .container {
+    .servicesContainer {
         display: flex;
         margin-top: 50px;
         justify-content: center;
@@ -168,9 +169,9 @@ h2{
 
 
   /*More Small*/
-  @media (max-width: 720px) {
-    .container {
-        display: inline-block;
+  @media (max-width: 600px) {
+    .servicesContainer {
+        display: flex;
         margin-top: 50px;
         justify-content: center;
         align-items: center;
@@ -233,9 +234,10 @@ h2{
 
 
   /*Phone device*/
-  @media (max-width: 590px) {
-    .container {
-        display: inline-block;
+  @media (max-width: 730px) {
+    .servicesContainer {
+        display: grid;
+        grid-template-columns: auto;
         margin-top: 50px;
         justify-content: center;
         align-items: center;

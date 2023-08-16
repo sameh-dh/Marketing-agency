@@ -16,7 +16,7 @@ const Services = () => {
         <button className='btnS'>Services</button>
     </div>
 
-    <div className='container'>
+    <div className='servicesContainer'>
 
         <section className='servicesSection section1'>
             <div className='triangle1'/>
