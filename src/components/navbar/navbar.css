@@ -4,10 +4,7 @@
     margin: 0 auto;
     background-color: transparent;
     border-bottom: 2px solid rgb(74, 74, 74);
-
-    position: absolute;
-
-
+    /* position: fixed; */
     z-index: 1;
     justify-self: center;
 }

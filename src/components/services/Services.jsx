@@ -21,25 +21,25 @@ const Services = () => {
         <section className='servicesSection section1'>
             <div className='triangle1'/>
             <img src={logoDesignImg} alt='Logo Design Image' className='servicesImg' />
-            <h4 className='serviceTitle'>Logo Design</h4>
+            <h4 className='serviceTitleH4'>Logo Design</h4>
         </section>
 
         <section className='servicesSection section2'>
             <div className='triangle2'/>
             <img src={advertisingImg} alt='Advertising Image' className='servicesImg' />
-            <h4 className='servicesTitle'>Advertising</h4>
+            <h4 className='serviceTitleH4'>Advertising</h4>
         </section>
 
         <section className='servicesSection section3'>
             <div className='triangle3'/>
             <img src={socialMediaImg} alt='SocialMedia Image' className='servicesImg' />
-            <h4 className='servicesTitle'>Social media</h4>
+            <h4 className='serviceTitleH4'>Social media</h4>
         </section>
 
         <section className='servicesSection section4'>
             <div className='triangle4'/>
             <img src={websiteImg} alt='Website Image' className='servicesImg' />
-            <h4 className='servicesTitle'>Website</h4>
+            <h4 className='serviceTitleH4'>Website</h4>
         </section>
         
     </div>

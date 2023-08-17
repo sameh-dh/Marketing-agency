@@ -11,10 +11,8 @@ function App() {
     <Router>
     <div className="App">
       <Navbar />
-
       <Home/>
     {/* <Switch>
-
       <Route  path='/home'>
         <Home />
       </Route>

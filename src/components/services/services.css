@@ -1,14 +1,15 @@
+.sevices{
+  margin-top: 10%;
+}
 .servicesTitle{
     font-family: 'Raleway';
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 34px;
-    margin-top: 30px;
 }
 
 h2{
-    font-size: 34px;
+    font-size: 140%;
 }
 
 .btnS{
@@ -16,7 +17,7 @@ h2{
     display: inline-block;
     outline: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 130%;
     border-radius: 500px;
     transition-duration: .3s;
     border: 1px solid transparent;
@@ -26,9 +27,9 @@ h2{
     text-align: center;
     color: #fff;
     background-color: #c71818;
-    height: 40px;
-    width: 130px;
-    margin-left: 10px;
+    height: 7vh;
+    width: 15%;
+    margin-left: 1%;
 }
 .btnS:hover{
     background-color: #000000;
@@ -36,12 +37,11 @@ h2{
 
 .servicesContainer {
     display: flex;
-    margin-top: 50px;
+    margin-top: 5%;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr); /* Divides the screen into two columns */
-    gap: 20px; 
-    column-gap: 40px;
-    margin-bottom: 50px;
+    column-gap: 3%;
+    margin-bottom: 15%;
     width: auto;
     align-items: center;
   }
@@ -50,8 +50,8 @@ h2{
     display: block;
     justify-content: center;
     text-align: center;
-    width: 26vh;
-    height: 16vh;
+    width: 16%;
+    height: 13%;
     font-family: 'Raleway';
     border-radius: 3px;
     align-items: center;
@@ -71,15 +71,14 @@ h2{
   }
 
   .servicesImg{
-    width: 40px;
-    height: 38px;
-    /* margin-top: 15px; */
+    width: 25%;
+    height: 20%;
     padding: 0;
-    padding-top: 10px ;
+    padding-top: 6%;
   }
-  .servicesTitle{
+  .serviceTitleH4{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 95%;
   }
   
   .triangle1 {
@@ -127,194 +126,114 @@ h2{
 
 
 
-
-  
-  /* Smaller*/
-  @media (max-width: 920px) {
+  @media (max-width: 800px){
+    .btnS{
+      height: 7vh;
+      width: 20%;
+      font-size: 125%;
+    }
     .servicesContainer {
-        display: flex;
-        margin-top: 50px;
-        justify-content: center;
-        grid-template-columns: repeat(4, 1fr); /* Divides the screen into two columns */
-        gap: 15px; 
-        height: 100vh; 
-        width: auto;
-      }
-    .servicesSection {
-        border: 0.5px solid #000000;
-        display: block;
-        width: 24vh;
-        height: 14vh;
-        font-family: 'Raleway';
-        border-radius: 3px;
-      }
-    
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+    }
+  .servicesSection {
+    width: 29vh;
+    height: 22vh;
+    margin-bottom: 12%;
+    }
     .servicesImg{
+      width: 43px;
+      height: 43px;
+      padding: 0;
+      padding-top: 15%;
+    }
+    .serviceTitleH4{
+      font-weight: bold;
+      font-size: 95%;
+    }
+  }
+
+  @media (max-width: 700px){
+    .btnS{
+      width: 22%;
+    }
+  .servicesSection {
+    width: 27vh;
+    height: 20vh;
+    margin-bottom: 12%;
+    }
+    .servicesImg{
+      width: 41px;
+      height: 41px;
+      padding: 0;
+      padding-top: 15%;
+    }
+    .serviceTitleH4{
+      font-weight: bold;
+      font-size: 93%;
+    }
+  }
+
+  @media (max-width: 600px){
+    .btnS{
+      width: 26%;
+    }
+    .servicesSection {
+      width: 25vh;
+      height: 18vh;
+      margin-bottom: 12%;
+      }
+      .servicesImg{
+        width: 39px;
+        height: 39px;
+        padding: 0;
+        padding-top: 14%;
+      }
+      .serviceTitleH4{
+        font-weight: bold;
+        font-size: 88%;
+      }
+  }
+  @media (max-width: 500px){
+    .btnS{
+      width: 30%;
+    }
+    .servicesSection {
+      width: 23vh;
+      height: 16vh;
+      margin-bottom: 12%;
+      }
+      .servicesImg{
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        padding-top: 8%;
+      }
+      .serviceTitleH4{
+        font-weight: bold;
+        font-size: 86%;
+      }
+  }
+  @media (max-width: 400px){
+    .btnS{
+      width: 34%;
+    }
+    .servicesSection {
+      width: 22vh;
+      height: 17vh;
+      margin-bottom: 12%;
+      }
+      .servicesImg{
         width: 35px;
         height: 35px;
-        margin-top: 10px;
-        padding: 0%;
+        padding: 0;
+        padding-top: 8%;
       }
-      .servicesTitle{
-        font-size: 11px;
+      .serviceTitleH4{
+        font-weight: bold;
+        font-size: 86%;
       }
-      .triangle1 {
-        position: absolute;
-        border-right: 50px solid transparent; /* Adjust the size of the triangle */
-        border-top: 50px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
-        border-radius: 4;
-      }
-    
-      .triangle2{
-        position: absolute;
-        border-right: 50px solid transparent; 
-        border-top: 50px solid #c71818; 
-        border-radius: 4;
-      }
-    
-      .triangle3{
-        position: absolute;
-        border-right: 50px solid transparent; 
-        border-top: 50px solid rgb(0, 108, 196); 
-        border-radius: 4;
-      }
-    
-      .triangle4{
-        position: absolute;
-        border-right: 50px solid transparent; 
-        border-top: 50px solid rgb(255, 230, 0); 
-        border-radius: 4;
-      }
-    
-  }
-
-
-
-
-
-
-
-
-  /*More Small*/
-  @media (max-width: 600px) {
-    .servicesContainer {
-        display: flex;
-        margin-top: 50px;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; 
-        width: auto;
-      }
-    .servicesSection {
-        border: 0.5px solid #000000;
-        margin-top: 35px;
-        width: 30vh;
-        height: 18vh;
-        font-family: 'Raleway';
-        border-radius: 3px;
-      }
-    
-    .servicesImg{
-        width: 45px;
-        height: 46px;
-        margin-top: 10px;
-        padding: 0%;
-      }
-      .servicesTitle{
-        font-size: 18px;
-      }
-      .triangle1 {
-        position: absolute;
-        border-right: 70px solid transparent; /* Adjust the size of the triangle */
-        border-top: 70px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
-        border-radius: 4;
-      }
-    
-      .triangle2{
-        position: absolute;
-        border-right: 70px solid transparent; 
-        border-top: 70px solid #c71818; 
-        border-radius: 4;
-      }
-    
-      .triangle3{
-        position: absolute;
-        border-right: 70px solid transparent; 
-        border-top: 70px solid rgb(0, 108, 196); 
-        border-radius: 4;
-      }
-    
-      .triangle4{
-        position: absolute;
-        border-right: 70px solid transparent; 
-        border-top: 70px solid rgb(255, 230, 0); 
-        border-radius: 4;
-      }
-    
-  }
-
-
-
-
-
-
-
-
-  /*Phone device*/
-  @media (max-width: 730px) {
-    .servicesContainer {
-        display: grid;
-        grid-template-columns: auto;
-        margin-top: 50px;
-        justify-content: center;
-        align-items: center;
-        height: 100vh; 
-        width: auto;
-      }
-    .servicesSection {
-        border: 0.5px solid #000000;
-        margin-top: 35px;
-        width: 30vh;
-        height: 18vh;
-        font-family: 'Raleway';
-        border-radius: 3px;
-      }
-    
-    .servicesImg{
-        width: 50px;
-        height: 45px;
-        margin-top: 10px;
-        padding: 0%;
-      }
-      .servicesTitle{
-        font-size: 16px;
-      }
-      .triangle1 {
-        position: absolute;
-        border-right: 70px solid transparent; /* Adjust the size of the triangle */
-        border-top: 70px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
-        border-radius: 4;
-      }
-    
-      .triangle2{
-        position: absolute;
-        border-right: 70px solid transparent; 
-        border-top: 70px solid #c71818; 
-        border-radius: 4;
-      }
-    
-      .triangle3{
-        position: absolute;
-        border-right: 70px solid transparent; 
-        border-top: 70px solid rgb(0, 108, 196); 
-        border-radius: 4;
-      }
-    
-      .triangle4{
-        position: absolute;
-        border-right: 70px solid transparent; 
-        border-top: 70px solid rgb(255, 230, 0); 
-        border-radius: 4;
-      }
-    
   }
