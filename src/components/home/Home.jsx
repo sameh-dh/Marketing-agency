@@ -4,6 +4,8 @@ import HomeSection from './HomeSection'
 import About from '../about/About'
 import Services from '../services/Services'
 import Testimonials from '../Testimonials/Testimonials'
+import Footer from '../footer/Footer'
+import Contact from '../contact/Contact'
 const Home = () => {
   return (
     <div id='home'>
@@ -11,6 +13,8 @@ const Home = () => {
       <About />
       <Services />
       <Testimonials />
+      <Contact/>
+      <Footer/>
     </div>
   )
 }
