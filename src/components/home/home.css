@@ -36,6 +36,7 @@
     border-radius: 100px;
    background: #D01110;
    box-shadow: 43px 51px 50px 0px rgba(0, 0, 0, 0.38);
+   cursor: pointer;
 }
 
 .HomeSection-buttons {

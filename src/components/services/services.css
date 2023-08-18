@@ -1,15 +1,17 @@
 .sevices{
-  margin-top: 10%;
+  margin-top: 50px;
 }
 .servicesTitle{
     font-family: 'Raleway';
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 34px;
+    margin-top: 30px;
 }
 
 h2{
-    font-size: 140%;
+    font-size: 45px;
 }
 
 .btnS{
@@ -17,18 +19,18 @@ h2{
     display: inline-block;
     outline: none;
     cursor: pointer;
-    font-size: 130%;
+    font-size:35px;
     border-radius: 500px;
     transition-duration: .3s;
     border: 1px solid transparent;
-    min-width: 30px;
+   
     white-space: normal;
     font-weight: 900;
     text-align: center;
     color: #fff;
     background-color: #c71818;
-    height: 7vh;
-    width: 15%;
+   
+    padding: 10px 20px 10px 20px;
     margin-left: 1%;
 }
 .btnS:hover{
@@ -83,8 +85,8 @@ h2{
   
   .triangle1 {
     position: absolute;
-    border-right: 70px solid transparent; /* Adjust the size of the triangle */
-    border-top: 70px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
+    border-right: 110px solid transparent; /* Adjust the size of the triangle */
+    border-top: 110px solid rgb(51, 50, 50); /* Adjust the color and size of the triangle */
     border-radius: 4;
     left: -10px;
     top: -10px;
@@ -95,8 +97,8 @@ h2{
 
   .triangle2{
     position: absolute;
-    border-right: 70px solid transparent; 
-    border-top: 70px solid #c71818; 
+    border-right: 110px  solid transparent; 
+    border-top: 110px  solid #c71818; 
     border-radius: 4;
     left: -10px;
     top: -10px;
@@ -105,8 +107,8 @@ h2{
 
   .triangle3{
     position: absolute;
-    border-right: 70px solid transparent; 
-    border-top: 70px solid #44ABCC; 
+    border-right: 110px   solid transparent; 
+    border-top: 110px   solid #44ABCC; 
     border-radius: 4;
     left: -10px;
     top: -10px;
@@ -115,8 +117,8 @@ h2{
 
   .triangle4{
     position: absolute;
-    border-right: 70px solid transparent; 
-    border-top: 70px solid #FAD02C;
+    border-right: 110px   solid transparent; 
+    border-top: 110px   solid #FAD02C;
    
     border-radius: 4;
     left: -10px;
@@ -129,8 +131,8 @@ h2{
   @media (max-width: 800px){
     .btnS{
       height: 7vh;
-      width: 20%;
-      font-size: 125%;
+      font-size: 25px;
+      padding: 8px 15px 8px 15px;
     }
     .servicesContainer {
       display: grid;
@@ -157,9 +159,7 @@ h2{
   }
 
   @media (max-width: 700px){
-    .btnS{
-      width: 22%;
-    }
+   
   .servicesSection {
     width: 27vh;
     height: 20vh;
@@ -178,9 +178,7 @@ h2{
   }
 
   @media (max-width: 600px){
-    .btnS{
-      width: 26%;
-    }
+  
     .servicesSection {
       width: 25vh;
       height: 18vh;
@@ -198,9 +196,7 @@ h2{
       }
   }
   @media (max-width: 500px){
-    .btnS{
-      width: 30%;
-    }
+  
     .servicesSection {
       width: 23vh;
       height: 16vh;
@@ -218,9 +214,7 @@ h2{
       }
   }
   @media (max-width: 400px){
-    .btnS{
-      width: 34%;
-    }
+   
     .servicesSection {
       width: 22vh;
       height: 17vh;

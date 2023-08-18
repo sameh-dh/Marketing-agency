@@ -1,0 +1,8 @@
+.testimonials-container {
+    position: relative;
+    height: 50dvh;
+}
+.testimonials-svg {
+    position: absolute;
+    top: -340px;
+}

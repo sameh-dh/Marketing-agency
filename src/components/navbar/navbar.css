@@ -3,12 +3,12 @@
     width: 95dvw;
     margin: 0 auto;
     background-color: transparent;
-    border-bottom: 2px solid rgb(74, 74, 74);
-    /* position: fixed; */
-    z-index: 1;
-    justify-self: center;
-}
 
+    position: absolute;
+    justify-self: center;
+    z-index: 1;
+    border-bottom: 2px solid rgba(154, 153, 153, 0.627);
+}
 .navbar-items-container,
 .navbarServ-container {
     font-family: 'Raleway';
