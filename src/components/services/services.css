@@ -10,9 +10,13 @@
     margin-top: 30px;
 }
 
-h2{
+
+.Home-sections-title{
     font-size: 45px;
-}
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
 
 .btnS{
     font-family: 'Raleway';
@@ -32,28 +36,60 @@ h2{
    
     padding: 10px 20px 10px 20px;
     margin-left: 1%;
+
 }
+
+
+ .Home-sections-title::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(1);
+    height: 4px;
+    border-radius: 2px;
+    bottom: -10px;
+    left: 15%;
+    right: 15%;
+    background-color: #4679bc;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.Home-sections-title:hover::after {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+}
+
+.Home-sections-title::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
 .btnS:hover{
     background-color: #000000;
 } 
 
 .servicesContainer {
-    display: flex;
-    margin-top: 5%;
+  
+    display: grid;
     justify-content: center;
-    grid-template-columns: repeat(4, 1fr); /* Divides the screen into two columns */
-    column-gap: 3%;
-    margin-bottom: 15%;
-    width: auto;
+    grid-template-columns:auto auto auto auto; /* Divides the screen into two columns */
+    column-gap: 60px;
+    row-gap: 50px;
+    /* margin-bottom: 15%; */
+    width: 90%;
     align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
   }
   .servicesSection {
-    border: 0.5px solid #000000;
+    /* border: 0.5px solid #000000; */
     display: block;
     justify-content: center;
     text-align: center;
-    width: 16%;
-    height: 13%;
+    /* width: 16%; */
+    /* height: 13%; */
     font-family: 'Raleway';
     border-radius: 3px;
     align-items: center;
@@ -63,24 +99,19 @@ h2{
   .section1, .section2, .section3, .section4{
     transition: box-shadow 0.3s;
     position: relative;
-    box-shadow: -6px 24px 85px 0px rgba(200, 188, 188, 0.25);
   }
 
-  .section1:hover .triangle1, .section2:hover .triangle2, .section3:hover .triangle3, .section4:hover .triangle4{
-    /* box-shadow: 0px 0px 10px rgba(0, 5, 0, 5.5);  */
-    rotate: -15deg;
-    left: -30px;
-  }
+
 
   .servicesImg{
-    width: 25%;
-    height: 20%;
+    width: 100px;
+    height: 100px;
     padding: 0;
     padding-top: 6%;
   }
   .serviceTitleH4{
     font-weight: bold;
-    font-size: 95%;
+    font-size: 25px;
   }
   
   .triangle1 {

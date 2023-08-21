@@ -5,6 +5,7 @@
     gap: 0px; /* Gap between grid items */
     width: 100%;
     height: fit-content;
+    padding: 20px;
   }
   
 .section {
