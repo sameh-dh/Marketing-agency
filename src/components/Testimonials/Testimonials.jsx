@@ -1,12 +1,44 @@
 
-import React , {useState} from "react";
+import React , {useState,useEffect,useRef} from "react";
 import "./testimonials.css";
 import {TestimonialsData} from "./Data";
 const Testimonials = () => {
 
 const  [i, setI] = useState(0)
 const  [j, setJ] = useState(TestimonialsData.length)
+
+const testimonialsPannel = useRef();
  
+useEffect(()=> {
+const handleScroll = (e)=> {
+  panelSlideIn();
+}
+window.addEventListener('scroll', handleScroll);
+})
+
+
+const panelSlideIn = function() {
+      
+       
+  const slideInAt = (window.scrollY + window.innerHeight) -  testimonialsPannel.current.offsetHeight / 4;
+  const panelMidpoint = testimonialsPannel.current.offsetTop + testimonialsPannel.current.offsetHeight / 4;
+  console.log("slideinat :",slideInAt,"pannelMidpoint: ", panelMidpoint)
+  if (slideInAt > panelMidpoint) {
+    testimonialsPannel.current.classList.add('testimonials-container-fade-out');
+  }
+
+}
+
+ setTimeout(() => {
+  if (i=== j-1){
+    setI(0);
+  }else {
+    setI(i+1);
+  }
+  }, 4000);
+  // return () => clearTimeout(timer);
+
+
 function next() {
   let res =(j + i + 1) % j
   setI(res);
@@ -21,7 +53,7 @@ function prev() {
 }
 
   return (
-    <div className="testimonials-container">
+    <div className="testimonials-container" ref={testimonialsPannel}>
    <div className="testimonials-title"><h2 className="Home-sections-title">Testimonials</h2> </div>
         <div id="box">
           <div class="wrapper">
@@ -29,11 +61,10 @@ function prev() {
             <img src={TestimonialsData[i].image}></img>
             <h3>{TestimonialsData[i].name}</h3>
             <p>{TestimonialsData[i].testimonial}</p>
-   
-       
+  
         {/* <h6>{TestimonialsData[i].job}</h6> */}
               <div id="testimonial1" class="active">
-                <img src="" />
+                
               </div>
             </div>
             <button id="prev" onClick={()=> prev()}>

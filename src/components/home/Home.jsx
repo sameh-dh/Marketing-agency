@@ -6,6 +6,7 @@ import Services from '../services/Services'
 import Testimonials from '../Testimonials/Testimonials'
 import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
+import Animation from '../animation/Animation'
 const Home = () => {
   return (
     <div id='home'>
@@ -14,6 +15,7 @@ const Home = () => {
       <Services />
       <Testimonials />
       <Contact/>
+   
       <Footer/>
     </div>
   )

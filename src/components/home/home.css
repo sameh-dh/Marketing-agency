@@ -1,3 +1,8 @@
+
+#home {
+    width: 100dvw;
+    overflow-x: hidden;
+}
 .HomeSection-container {
     margin: 0 auto;
     text-align: center;
@@ -5,7 +10,8 @@
     background-color: #1F1A19;
     height: fit-content;
     margin-top: -35px;
-  
+    width: 100dvw;
+  overflow-x: hidden;
    
 }
 .HomeSection-main {
@@ -34,7 +40,7 @@
     font-weight: bold;
     font-size: 18px;
     border-radius: 100px;
-   background: #D01110;
+   background: #068FFF;
    box-shadow: 43px 51px 50px 0px rgba(0, 0, 0, 0.38);
    cursor: pointer;
 }

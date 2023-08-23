@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect, useRef}from "react";
 import "./services.css";
 import advertisingImg from "../../images/bullhorn.png";
 import socialMediaImg from "../../images/content.png";
@@ -6,8 +6,34 @@ import websiteImg from "../../images/internet.png";
 import logoDesignImg from "../../images/logo-design.png";
 
 const Services = () => {
+
+
+  const ServicesPannel = useRef();
+ 
+  useEffect(()=> {
+    const handleScroll = (e)=> {
+      panelSlideIn();
+    }
+    window.addEventListener('scroll', handleScroll);
+    })
+    
+    
+    const panelSlideIn = function() {
+          
+           
+      const slideInAt = (window.scrollY + window.innerHeight) -  ServicesPannel.current.offsetHeight / 4;
+      const panelMidpoint = ServicesPannel.current.offsetTop + ServicesPannel.current.offsetHeight / 4;
+      console.log("slideinat :",slideInAt,"pannelMidpoint: ", panelMidpoint)
+      if (slideInAt > panelMidpoint) {
+        ServicesPannel.current.classList.add('services-fade-out');
+      }
+    
+    }
+    
+
+
   return (
-    <div className="sevices">
+    <div className="sevices" ref={ServicesPannel}>
       <div className="servicesTitle">
         <h2 className="Home-sections-title">Our Services</h2>
        

@@ -2,6 +2,17 @@
     position: relative;
     height: fit-content;
     padding: 20px;
+    opacity: 0;
+    transform: translateY(15%);
+    transition: all 3s;
+    width: 100dvw;
+ 
+
+}
+
+.testimonials-container-fade-out {
+  opacity: 1;
+  transform: translate(0);
 }
 .testimonials-svg {
     position: absolute;
@@ -16,6 +27,8 @@
     padding-top: 50px;
     color: #292828; */
 }
+
+
 
 /* #loader {
     background-color: #ffffff;
@@ -56,18 +69,12 @@
     }
   }
   #box {
-    /* position: absolute; */
-    /* -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
-    /* top: 50%;
-    left: 50%; */
-    width: 100%;
+    width: 60%;
 
-    min-height: 26em;
     margin: 0 auto;
     margin-top: 20px;
     display: block;
+  
   }
   .img-con {
     position: absolute;
@@ -77,12 +84,14 @@
     width: 1px;
   }
   .wrapper {
-    background-color: #4679bc;
+    border-radius:20px ;
+    background-color: #0985ea;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     transition: all 0.5s ease-out;
+    box-shadow: rgba(188, 187, 187, 0.639) 0px 16px 48px 0px
   
   }
   .testimonial-container {
@@ -91,6 +100,7 @@
     position: relative;
     margin: auto;
     padding: 1.8em 1.2em;
+    transition: all 0.5s ease-out;
   }
   .testimonial-container p {
     color: #ffffffb6;
@@ -98,17 +108,23 @@
     font-size: 1.3em;
     line-height: 2em;
     letter-spacing: 0.05em;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
   }
   .testimonial-container img {
     display: block;
     margin: 1.8em auto 1.25em auto;
     border-radius: 50%;
     width: 8.4em;
+    transition: all 0.5s ease-in;
+    border: 6px solid rgba(255, 255, 255, 0.523);
   }
   .testimonial-container h3 {
     color: #fcfcfc;
     font-size: 2em;
     text-align: center;
+    transition: all 0.5s ease-in
   }
   .testimonial-container h6 {
     color: #e7e9ef;
@@ -116,6 +132,7 @@
     letter-spacing: 0.03em;
     font-weight: 400;
     text-align: center;
+    transition: all 0.5s ease-in
   }
   .wrapper button {
     font-size: 1.8em;
@@ -134,16 +151,45 @@
     cursor: pointer;
   }
   button#next {
+    color: transparent;
     right: 1.1em;
   }
   button#prev {
+    color: transparent;
     left: 1.1em;
   }
   
- 
+  @media screen and (max-width: 1200px) {
+    #box {
+      width: 100%;
+    }
+    .wrapper {
+      border-radius:0px ;
+    }
+  }
+  
   @media screen and (max-width: 650px) {
     .wrapper {
       font-size: 14px;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    .wrapper {
+      font-size: 12px;
+    }
+    .testimonial-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin: auto;
+      padding: 1em;
+      transition: all 0.5s ease-out;
+    }
+
+    .testimonial-container p {
+      width: 85%;
     }
   }
 

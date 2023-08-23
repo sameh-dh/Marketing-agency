@@ -15,12 +15,12 @@ const Navbar = () => {
         <i className="uil  uil-question-circle nav__icon"></i>Who we are ?</a></li>
         <li className="navbar-items"><a className={activated[1]} href='#services' onClick={()=>setActivated(["","active","","","","",""])}> <i className="uil uil-file-alt nav__icon"></i> services</a></li>
         <li className="navbar-items"><a className={activated[2]} href='#work' onClick={()=>setActivated(["","","active","","","",""])}> <i className="uil uil-document-layout-left nav__icon"></i> Blogs</a></li>
-        <li className="navbar-items"><a className={activated[3]} href='#work' onClick={()=>setActivated(["","","","active","","",""])}> <i className="uil uil-box nav__icon"></i>Products</a></li>
+        <li className="navbar-items"><a className={activated[3]} href='#work' onClick={()=>setActivated(["","","","active","","",""])}> <i className="uil uil-box nav__icon"></i>Advertising</a></li>
         <li className="navbar-items"><a className={activated[4]} href="#contact" onClick={()=>setActivated(["","","","","active",""])}><i className="uil uil-phone-volume nav__icon"></i> Contact</a></li>
     
       
     
-       <li className='navbar-items'><button>Sponsoring</button></li>
+       <li className='navbar-items'><button>Book a call</button></li>
       </ul>
       <i
             className="uil uil-times nav__close"

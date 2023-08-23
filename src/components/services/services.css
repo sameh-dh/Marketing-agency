@@ -1,5 +1,15 @@
 .sevices{
   margin-top: 50px;
+  opacity: 0;
+  transform: translateY(15%);
+  transition: all 3s;
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
+.services-fade-out {
+opacity: 1;
+transform: translate(0);
 }
 .servicesTitle{
     font-family: 'Raleway';
@@ -17,7 +27,7 @@
     display: inline-block;
     text-align: center;
 
-
+}
 .btnS{
     font-family: 'Raleway';
     display: inline-block;
@@ -50,7 +60,7 @@
     bottom: -10px;
     left: 15%;
     right: 15%;
-    background-color: #4679bc;
+    background-color: #068FFF;
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
 }
@@ -110,6 +120,7 @@
     padding-top: 6%;
   }
   .serviceTitleH4{
+    color: #068FFF;
     font-weight: bold;
     font-size: 25px;
   }
@@ -157,7 +168,11 @@
     border-radius: 5px;
   }
 
-
+  @media screen and (max-width: 900px){
+    .serviceTitleH4 {
+      font-size: 20px;
+    }
+  }
 
   @media (max-width: 800px){
     .btnS{
@@ -167,98 +182,69 @@
     }
     .servicesContainer {
       display: grid;
-      grid-template-columns: auto;
+      grid-template-columns: auto auto auto;
       justify-content: center;
       align-items: center;
       width: auto;
+      text-align: center;
+      margin-bottom: 30px;
     }
   .servicesSection {
-    width: 29vh;
-    height: 22vh;
-    margin-bottom: 12%;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 0;
     }
-    .servicesImg{
-      width: 43px;
-      height: 43px;
-      padding: 0;
-      padding-top: 15%;
-    }
-    .serviceTitleH4{
-      font-weight: bold;
-      font-size: 95%;
-    }
+  
+  
   }
 
+
+  
   @media (max-width: 700px){
-   
+    .btnS{
+      height: 7vh;
+      font-size: 25px;
+      padding: 8px 15px 8px 15px;
+    }
+    .servicesContainer {
+      display: grid;
+      grid-template-columns:  auto auto;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
   .servicesSection {
-    width: 27vh;
-    height: 20vh;
-    margin-bottom: 12%;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 0;
     }
-    .servicesImg{
-      width: 41px;
-      height: 41px;
-      padding: 0;
-      padding-top: 15%;
-    }
-    .serviceTitleH4{
-      font-weight: bold;
-      font-size: 93%;
-    }
-  }
-
-  @media (max-width: 600px){
   
-    .servicesSection {
-      width: 25vh;
-      height: 18vh;
-      margin-bottom: 12%;
-      }
-      .servicesImg{
-        width: 39px;
-        height: 39px;
-        padding: 0;
-        padding-top: 14%;
-      }
-      .serviceTitleH4{
-        font-weight: bold;
-        font-size: 88%;
-      }
-  }
-  @media (max-width: 500px){
+    .Home-sections-title {
+      font-size: 26px;
+    }
+    .serviceTitleH4 {
+      font-size: 18px;
+    }
   
-    .servicesSection {
-      width: 23vh;
-      height: 16vh;
-      margin-bottom: 12%;
-      }
-      .servicesImg{
-        width: 36px;
-        height: 36px;
-        padding: 0;
-        padding-top: 8%;
-      }
-      .serviceTitleH4{
-        font-weight: bold;
-        font-size: 86%;
-      }
   }
+ 
   @media (max-width: 400px){
-   
-    .servicesSection {
-      width: 22vh;
-      height: 17vh;
-      margin-bottom: 12%;
-      }
-      .servicesImg{
-        width: 35px;
-        height: 35px;
-        padding: 0;
-        padding-top: 8%;
-      }
-      .serviceTitleH4{
-        font-weight: bold;
-        font-size: 86%;
-      }
+  
+    .servicesContainer {
+      display: grid;
+      grid-template-columns:  auto ;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+     
+    .Home-sections-title {
+      font-size: 20px;
+    }
+  
+    .serviceTitleH4 {
+      font-size: 16px;
+    }
   }
+ 

@@ -1,11 +1,33 @@
-import React from 'react'
+import React ,{useRef, useEffect}from 'react'
 import './footer.css'
 import { FaInstagram, FaEnvelope, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
+
+  const FooterPannel = useRef();
+ 
+  useEffect(()=> {
+    const handleScroll = (e)=> {
+      panelSlideIn();
+    }
+    window.addEventListener('scroll', handleScroll);
+    })
+    
+    
+    const panelSlideIn = function() {
+          
+           
+      const slideInAt = (window.scrollY + window.innerHeight) -  FooterPannel.current.offsetHeight / 4;
+      const panelMidpoint = FooterPannel.current.offsetTop + FooterPannel.current.offsetHeight / 4;
+      console.log("slideinat :",slideInAt,"pannelMidpoint: ", panelMidpoint)
+      if (slideInAt > panelMidpoint) {
+        FooterPannel.current.classList.add('footer-basic-fade-out');
+      }
+    
+    }
   return (
     <>
-    <div class="footer-basic">
+    <div className="footer-basic wave wave--top" ref={FooterPannel}>
         <footer>
             <ul>
                 <li><a href="#">Home</a></li>
