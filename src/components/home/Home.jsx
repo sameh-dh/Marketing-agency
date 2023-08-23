@@ -6,12 +6,14 @@ import Services from '../services/Services'
 import Testimonials from '../Testimonials/Testimonials'
 import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
-import Animation from '../animation/Animation'
+import Blogs from '../blogs/Blogs'
+
+
 const Home = () => {
   return (
     <div id='home'>
-      <HomeSection />
-      <About />
+      <HomeSection /> 
+       <About />
       <Services />
       <Testimonials />
       <Contact/>

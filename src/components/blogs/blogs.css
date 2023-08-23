@@ -1,0 +1,127 @@
+.blogsC{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+.blogsT{
+    margin-bottom: 100px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-items: center;
+    margin: 0 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blog{
+    /* border: 2px solid black; */
+    min-height: 100%;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blogTitle{
+    text-decoration: none;
+    margin: 10px 20px;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+    font-size: large;
+}
+.blogImg{
+    width: 100%;
+    height: 50%;
+}
+.blogDescription{
+    margin: 0 20px;
+    text-align: left;
+    font-size: small;
+}
+.blogButton{
+    float: right;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 18%;
+    background-color: rgb(184, 182, 182);
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px){
+    .blogs{
+        display: block;
+    }
+    .blog{
+        margin-bottom: 20%;
+        margin-top: 30%;
+        display: block;
+        height: fit-content;
+    }
+    .blogButton{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .blogTitle{
+        margin: 10px 0px;
+        font-size: 100%;
+        padding: 0% 5%;
+    }
+    .blogDescription{
+        padding: 0% 5%;
+        padding-bottom: 5%;
+        margin: 10px 0px;
+        font-size: 70%;
+    }
+}
+
+                                   /***********************Blog Detail************************/
+
+.blogDetail{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    background: #F3F3F3;
+}
+.blogD{
+    margin: 1% 22%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.blogDImage{
+    width: 100%;
+    height: 370px;
+    box-shadow: -9px 57px 99px 0px rgba(105, 105, 105, 0.25);
+}
+.blogDTitle{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    font-size: 2rem;
+}
+.blogDDescription{
+    margin: 0 1%;
+    text-align: start;
+    line-height: 30px;
+    font-size: 0.8rem;
+}
+@media (max-width: 900px){
+    .blogDImage{
+        width: 110%;
+        height: 300%;
+    }
+    .blogDTitle{
+        font-size: 120%;
+    }
+    .blogDDescription{
+        font-size: 70%;
+    }
+}

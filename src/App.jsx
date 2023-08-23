@@ -5,13 +5,17 @@ import { BrowserRouter as Router ,
    import About from './components/about/About';
    import Navbar from './components/navbar/Navbar';
    import Services from './components/services/Services';
+import Blogs from './components/blogs/Blogs';
+import BlogDetail from './components/blogs/BlogDetails';
 
 function App() {
   return (
     <Router>
     <div className="App">
-      <Navbar />
-      <Home/>
+    <Route path="/" exact component={Blogs} />
+    <Route path="/blog/:id" component={BlogDetail} />
+      {/* <Navbar />
+      <Home/> */}
     {/* <Switch>
       <Route  path='/home'>
         <Home />
