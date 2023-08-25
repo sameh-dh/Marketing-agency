@@ -31,7 +31,8 @@ const About = () => {
 
 
   return (
-
+<div>
+<div className='About-title'><h2 className="Home-sections-title">Who we are ?</h2></div>
     <div className="grid-container" ref={AboutPannel}>
 
     <div className="section s1">
@@ -65,7 +66,7 @@ const About = () => {
     </div>
 
     </div>
- 
+    </div>
   )
 }
 

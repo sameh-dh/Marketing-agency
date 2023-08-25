@@ -20,7 +20,7 @@ const Navbar = () => {
     
       
     
-       <li className='navbar-items'><button>Book a call</button></li>
+       <li className='navbar-items'><button>Work with us</button></li>
       </ul>
       <i
             className="uil uil-times nav__close"

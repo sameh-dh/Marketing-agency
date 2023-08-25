@@ -1,6 +1,13 @@
 .blogsC{
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    width: 100dvw;
+    overflow-x: hidden;
+    margin-top: 60px;
+}
+.blogsTitle {
+    margin: 0 auto;
+    text-align: center ;
+    margin-bottom: 70px;
 }
 .blogsT{
     margin-bottom: 100px;
@@ -18,12 +25,14 @@
 .blog{
     /* border: 2px solid black; */
     min-height: 100%;
-    width: 100%;
+    width: 550px;
     height: fit-content;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px
+    
 }
 .blogTitle{
     text-decoration: none;
@@ -31,26 +40,41 @@
     text-align: left;
     font-weight: bold;
     color: black;
-    font-size: large;
+    font-size: 28px;
+    padding: 20px;
+    padding-left: 0;
 }
 .blogImg{
     width: 100%;
-    height: 50%;
+    height: 350px;
+
+    object-fit: cover;
+
+    
 }
 .blogDescription{
+    font-family: "Lora";
     margin: 0 20px;
     text-align: left;
-    font-size: small;
+    font-size: 16px;
+    line-height: 170%;
 }
 .blogButton{
     float: right;
     margin-top: 30px;
     text-decoration: none;
-    color: black;
-    padding: 8px 18%;
-    background-color: rgb(184, 182, 182);
-    font-size: small;
+    color: rgba(0, 0, 0, 0.702);
+    padding: 15px 70px 15px 70px;
+    background-color: rgba(184, 182, 182, 0.675);
+    font-size: 16px;
     margin-bottom: 20px;
+    border-radius: 3px;
+    margin-right: -12px;
+}
+
+.blogButton:hover {
+    background-color: rgba(184, 182, 182, 0.961);
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 800px){
@@ -88,7 +112,6 @@
     text-align: center;
     width: 100%;
     height: fit-content;
-    background: #F3F3F3;
 }
 .blogD{
     margin: 1% 22%;
@@ -97,21 +120,63 @@
     text-align: center;
 }
 .blogDImage{
-    width: 100%;
-    height: 370px;
-    box-shadow: -9px 57px 99px 0px rgba(105, 105, 105, 0.25);
+    width:50dvw;
+    height: 500px;
+    
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    border-radius: 10px;
 }
 .blogDTitle{
+    font-family: "Lora";
     text-align: center;
     margin-top: 5%;
-    margin-bottom: 8%;
-    font-size: 2rem;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    position: relative;
 }
 .blogDDescription{
-    margin: 0 1%;
+    font-family: "Lora";
+   
     text-align: start;
-    line-height: 30px;
-    font-size: 0.8rem;
+    line-height: 260%;
+    font-size: 1.2rem;
+    margin-top: 200px;
+}
+.testimonials-svg {
+    position: absolute;
+    bottom: -150px;
+    width: 100dvw;
+    left: 0;
+}
+
+.blog-detail-tags {
+    display: flex;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+ 
+    width: fit-content;
+    padding: 40px;
+}
+
+.blog-detail-tags-title {
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 26px;
+   
+    font-family: "Lora";
+}
+
+.blog-details-links {
+    width: 100dvw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 24px;
+    background-color: rgb(231, 229, 229);
+    font-family: "Lora";
+    font-weight: bold;
+    margin-bottom: 50px;
 }
 @media (max-width: 900px){
     .blogDImage{
@@ -125,3 +190,4 @@
         font-size: 70%;
     }
 }
+

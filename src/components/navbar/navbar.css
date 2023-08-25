@@ -98,14 +98,15 @@
     border: none;
     padding: 10px 20px 10px 20px;
     border-radius: 100px;
-    background: linear-gradient(109deg, #474646 22.92%, rgba(122, 118, 118, 0.72) 50.52%, #3F3F3F 77.08%);
+   
     box-shadow: 43px 51px 50px 0px rgba(0, 0, 0, 0.38);
     font-size: 18px;
     transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     position: absolute;
     right: 2px;
     top: 10px;
-    background-color: #2f6454;
+  background-color: #068FFF;
+  font-weight: bold;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }

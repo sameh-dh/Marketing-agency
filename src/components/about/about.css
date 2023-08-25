@@ -10,7 +10,12 @@
     width: 100dvw;
     overflow-x: hidden;
 }
-
+.About-title {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
 .grid-container-fade-out {
   opacity: 1;
   transform: translate(0);
@@ -26,17 +31,16 @@
     text-align: center;
   }
   
-.s1, .s4{
-    background-color: #f9f5f5cf;
-}  
+
 
 .s2, .s3{
-    background-color: #ffffff9a;
+    background-color: #FFFF;
     display:block;
-    box-shadow: rgba(154, 152, 152, 0.176) 0px 16px 48px 0px;
-        backdrop-filter: blur(40px);
+    /* box-shadow: rgba(154, 152, 152, 0.176) 0px 16px 48px 0px;
+        backdrop-filter: blur(40px); */
       
 }
+
 
 .s2 h2, .s3 h2{
     margin-top: 10%;

@@ -14,6 +14,7 @@ function App() {
     <div className="App">
     <Route path="/" exact component={Blogs} />
     <Route path="/blog/:id" component={BlogDetail} />
+  
       {/* <Navbar />
       <Home/> */}
     {/* <Switch>
