@@ -1,0 +1,346 @@
+.ads-container {
+    width: 100dvw ;
+    overflow-x: hidden;
+
+}
+
+
+.ads-title {
+
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.ads-card-container {
+    width: 35%;
+    height: fit-content;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.ads-card-title {
+    background-color: #41ABC8;
+    font-size: 28px;
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-weight: medium;
+    position: relative;
+}
+
+.ads-card-circle1 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+.ads-card-circle2 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 10%;
+}
+.ads-card-circle3 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 20%;
+}
+.ads-card-circle4 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 30%;
+}
+.ads-card-circle5 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 40%;
+}
+
+.ads-card-circle6 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+}
+.ads-card-circle7 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 60%;
+}
+.ads-card-circle8 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 70%;
+}
+.ads-card-circle9 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 80%;
+}
+.ads-card-circle10 {
+    width: 10%;
+    height:80px;
+    border-radius: 100%;
+    background-color: #41abc8b3;
+    position: absolute;
+    bottom: -30px;
+    left: 90%;
+}
+
+.ads-card-price {
+    font-size: 34px;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.ads-card-option1 {
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    background-color: #41abc87a;   
+    width: fit-content;
+    padding: 18px 30px 18px 30px;
+    border-radius: 50px; 
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.ads-card-option1 img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    padding-left: 10px;
+
+}
+
+
+.ads-card-reserve {
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    background-color: #41abc8;   
+    width: fit-content;
+    padding: 20px 30px 20px 30px;
+    border-radius: 5px; 
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border: none;  
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 48px 0px  
+}
+
+.ads-card-reserve:hover {
+    background-color: black;
+
+}
+
+
+.social-media {
+
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.social-media img {
+    width: 50px;
+    height: auto;
+    padding-left: 30px;
+}
+
+.social-media img:hover {
+    width: 60px;
+}
+
+
+/* Break points  */
+
+@media screen and (max-width:1500px) {
+    .ads-card-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .ads-card-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .ads-card-container {
+        width: 80%;
+    }
+}
+
+/* Small Devices */
+
+@media screen and (max-width:800px) {
+    .ads-card-container {
+        width: 95%;
+    }
+    .ads-card-circle1,.ads-card-circle2,.ads-card-circle3,.ads-card-circle4,.ads-card-circle5,.ads-card-circle6,.ads-card-circle7,.ads-card-circle8,.ads-card-circle9,.ads-card-circle10{
+        height: 60px;
+        bottom: -20px;
+    }
+    
+    .ads-title {
+        font-size:32px ;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ads-card-container {
+        width: 95%;
+    }
+    .ads-card-circle1,.ads-card-circle2,.ads-card-circle3,.ads-card-circle4,.ads-card-circle5,.ads-card-circle6,.ads-card-circle7,.ads-card-circle8,.ads-card-circle9,.ads-card-circle10{
+        height: 50px;
+        bottom: -18px;
+    }
+    
+    .ads-title {
+        font-size:25px ;
+        padding: 10px;
+        padding-bottom: 0;
+        margin-top: 20px;
+    }
+
+
+    .ads-card-price {
+        font-size: 30px;
+        padding-top: 50px;
+        font-weight: bold;
+    }
+    
+    .ads-card-option1 {
+        font-size: 20px;
+        padding: 16px 26px 16px 26px;
+        margin-top: 25px;
+
+    }
+    .ads-card-option1 img{
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+        padding-left: 10px;
+    
+    }
+
+    .social-media img {
+        width: 40px;
+        height: auto;
+    }
+    
+    
+    .ads-card-reserve {
+        font-size: 20px;
+        background-color: #41abc8;   
+        padding: 20px 30px 20px 30px;
+    
+    }
+}
+
+
+@media screen and (max-width:350px) {
+    .ads-card-container {
+        width: 95%;
+    }
+    .ads-card-circle1,.ads-card-circle2,.ads-card-circle3,.ads-card-circle4,.ads-card-circle5,.ads-card-circle6,.ads-card-circle7,.ads-card-circle8,.ads-card-circle9,.ads-card-circle10{
+       display: none;
+    }
+    
+    .ads-title {
+        font-size:25px ;
+        padding: 10px;
+        padding-bottom: 0;
+        margin-top: 30px;
+        border-radius: 0;
+    }
+
+    .ads-card-title {
+        border-radius: 0;
+        padding: 20px;
+        height: fit-content;
+        font-size: 20px;
+    }
+
+    .ads-card-price {
+        font-size: 25px;
+        padding-top: 20px;
+        font-weight: bold;
+    }
+    
+    .ads-card-option1 {
+        font-size: 18px;
+        padding: 16px 26px 16px 26px;
+        margin-top: 25px;
+
+    }
+    .ads-card-option1 img{
+        width: 28px;
+        height: auto;
+        cursor: pointer;
+        padding-left: 10px;
+    
+    }
+
+    .social-media img {
+        width: 30px;
+        height: auto;
+    }
+    
+    
+    .ads-card-reserve {
+        font-size: 19px;
+        background-color: #41abc8;   
+        padding: 20px 30px 20px 30px;
+    
+    }
+}   

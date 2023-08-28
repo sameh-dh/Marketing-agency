@@ -7,7 +7,7 @@ import Testimonials from '../Testimonials/Testimonials'
 import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
 import Blogs from '../blogs/Blogs'
-
+import LastBlogs from '../blogs/LastBlogs'
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
        <About />
       <Services />
       <Testimonials />
+      <LastBlogs />
       <Contact/>
    
       <Footer/>

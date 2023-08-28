@@ -70,6 +70,13 @@
     margin-bottom: 20px;
     border-radius: 3px;
     margin-right: -12px;
+
+}
+
+.blogButton:hover {
+    background-color: rgba(184, 182, 182, 0.961);
+    color: rgb(0, 0, 0);
+
 }
 
 .blogButton:hover {
@@ -77,32 +84,6 @@
     color: rgb(0, 0, 0);
 }
 
-@media (max-width: 800px){
-    .blogs{
-        display: block;
-    }
-    .blog{
-        margin-bottom: 20%;
-        margin-top: 30%;
-        display: block;
-        height: fit-content;
-    }
-    .blogButton{
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    .blogTitle{
-        margin: 10px 0px;
-        font-size: 100%;
-        padding: 0% 5%;
-    }
-    .blogDescription{
-        padding: 0% 5%;
-        padding-bottom: 5%;
-        margin: 10px 0px;
-        font-size: 70%;
-    }
-}
 
                                    /***********************Blog Detail************************/
 
@@ -118,6 +99,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    
+    overflow-x: hidden;
 }
 .blogDImage{
     width:50dvw;
@@ -180,7 +163,7 @@
 }
 @media (max-width: 900px){
     .blogDImage{
-        width: 110%;
+        width: 100%;
         height: 300%;
     }
     .blogDTitle{
@@ -190,4 +173,152 @@
         font-size: 70%;
     }
 }
+
+
+.lastblogs-container{
+    opacity: 0;
+    width: 100dvw;
+    overflow-x: hidden;
+    transform: translateY(15%);
+    transition: all 3s;
+  }
+  
+.blogs-container-fade-out{
+    opacity: 1;
+transform: translate(0);
+}
+
+.allblogs {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    background-color: #068FFF;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width: 1600px) {
+   .testimonials-svg {
+    bottom: -250px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogDImage {
+        width: 60dvw;
+        height: 400px;
+    }
+    .blogDDescription  {
+        margin-top: 250px;
+    
+    }
+    .blogD {
+
+        padding: 10px 90px 10px 90px;
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+ .blogImg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+.blogDescription{
+font-size: 16px;
+}
+
+.testimonials-svg {
+    bottom: 100px;
+   }
+
+   .blogDDescription  {
+    margin-top: 120px;
+
+}
+.blog-details-links {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.blogDImage {
+    width: 70dvw;
+    height: 200px;
+}
+
+.blog-detail-tags-title  {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .blogImg{
+       height: 200px;  
+   }
+   .blogDescription{
+   font-size: 16px;
+   }
+   .blog {
+    width: 500px;
+   }
+   }
+
+   @media screen and (max-width: 500px) {
+    .blogImg{
+       height: 200px;  
+   }
+   .blogDescription{
+   font-size: 16px;
+   }
+   .blog {
+    width:450px;
+   }
+   .blogTitle {
+    font-size: 28px;
+   }
+   }
+
+   
+   @media screen and (max-width: 450px) {
+    .blogImg{
+       height: 140px;  
+   }
+   .blogDescription{
+   font-size: 14px;
+   }
+   .blog {
+    width:96dvw;
+   }
+   .blogTitle {
+    font-size: 24px;
+   }
+   .blogButton {
+    font-size: 14px;
+    padding: 15px 40px 15px 40px;
+   }
+   .blogD {
+
+    padding: 10px;
+    margin: 0;
+}
+.blogDDescription  {
+    margin-top: 100px;
+
+}
+.blog-detail-tags-title  {
+    font-size: 16px;
+}
+   }
 
