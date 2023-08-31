@@ -12,6 +12,7 @@ import Advertising from './components/services/advertising/Advertising';
 import Logo from './components/services/logo/Logo';
 import SocialContent from './components/services/socialContent/SocialContent';
 import Reserve from './components/services/Reserve/Reserve';
+import Seo from "../src/components/services/SEO/Seo.jsx"
 function App() {
   const [isToggle, setIsToggle] = useState(false);
 
@@ -24,15 +25,15 @@ function App() {
     <div className="App">
     {/* <Route path="/" exact component={Blogs} />
     <Route path="/blog/:id" component={BlogDetail} /> */}
-
+     <Seo />
 
     {/* <Advertising /> */}
-       <Navbar isToggle={isToggle} toggle={toggle}/>
+       {/* <Navbar isToggle={isToggle} toggle={toggle}/>
 
   
 
 
-      <Home  isToggle={isToggle}/>
+      <Home  isToggle={isToggle}/> */}
     <Switch>
       {/* <Route  path='/home'>
         <Home />
