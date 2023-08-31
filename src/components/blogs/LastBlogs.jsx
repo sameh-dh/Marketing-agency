@@ -5,7 +5,7 @@ import blogsData from './blogsData';
 import { Link } from 'react-router-dom';
 
 
-const LastBlogs = ({isToggle}) => {
+const LastBlogs = ({isToggle,dark}) => {
 
   const BlgosPannel = useRef();
   const [lastBlogsData, setLastBlogsData] =useState(blogsData.reverse().splice(2))
@@ -33,21 +33,23 @@ const LastBlogs = ({isToggle}) => {
   return (
     <div className='lastblogs-container' ref={BlgosPannel}> <div className='blogsC'>
     <div className="blogsTitle">
-        <h2 className="Home-sections-title">{isToggle?'Latest Articles in Digital World' :'Derniers articles dans le monde numérique'}</h2>
+        <h2 className={!dark ? "Home-sections-title": "Home-sections-title dark"}>{isToggle?'Latest Articles in Digital World' :'Derniers articles dans le monde numérique'}</h2>
       </div>
     <div className='blogs'>
     {blogsData.map((blog) => 
-        <div key={blog.id} className='blog'>
+        <div key={blog.id} className={!dark ? 'blog' :'blog dark'}>
             <img src={blog.image} alt={blog.title} className='blogImg'/>
-            <div className='blogTitle'>{blog.title}</div>
+            <div className={!dark ? 'blogTitle': 'blogTitle dark'}>{blog.title}</div>
             
-            <p className='blogDescription'>{blog.description.slice(0, 200)}...</p>
-            <Link to={`/blog/${blog.id}`} ><a  className='blogButton'>{isToggle? 'More':'Plus'}</a></Link>
+            <p className={!dark ?'blogDescription':'blogDescription dark'}>{blog.description.slice(0, 200)}...</p>
+            <a href={`/blog/${blog.id}`} ><div  className='blogButton' onclick={()=> window.location.reload()}>{isToggle? 'More':'Plus'}</div></a>
         </div>
     )}
     </div>
     </div>
-    <Link to={`/blog`} ><div className="allblogs"> {isToggle?'See all articles':'Voir tous les articles'}</div></Link> 
+    <a href={`/Blogs`} ><div onclick={()=> window.location.reload()
+
+    } className="allblogs"> {isToggle?'See all articles':'Voir tous les articles'}</div></a> 
     </div>
   )
 }

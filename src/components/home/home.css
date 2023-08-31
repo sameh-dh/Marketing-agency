@@ -25,13 +25,19 @@
 
 }
 
+
+
 .HomeSection-title {
    font-family: "Raleway";
    font-size: 55px;
-    padding-top: 25dvh;
+    padding-top: 20dvh;
     padding-right: 10px;
     padding-left: 10px;
 
+}
+
+.HomeSection-title.dark {
+    color: rgb(235, 235, 235);
 }
 
 .HomeSection-description {

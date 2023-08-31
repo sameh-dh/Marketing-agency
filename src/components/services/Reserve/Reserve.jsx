@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./reserve.css";
 
-const Reserve = () => {
+const Reserve = ({dark}) => {
     const form = useRef();
 
  
@@ -25,8 +25,8 @@ const Reserve = () => {
     };
   
     return (
-   <div className='contact-container reserve' >
-   <div className='contact-title'><h2 className="Home-sections-title">Let's Have a conversation</h2></div>
+   <div className={!dark ? 'contact-container reserve':'contact-container reserve dark'} >
+   <div className='contact-title'><h2 className={!dark ? "Home-sections-title":"Home-sections-title dark"}>Let's Have a conversation</h2></div>
    <form ref={form} onSubmit={sendEmail}>
         <input name="from_name" type="text" className="feedback-input" placeholder="Name" />
         <input type="email" name="user_email" className="feedback-input" placeholder="Email"/>

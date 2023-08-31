@@ -9,16 +9,16 @@ import Contact from '../contact/Contact'
 import Blogs from '../blogs/Blogs'
 import LastBlogs from '../blogs/LastBlogs'
 
-const Home = ({ isToggle }) => {
+const Home = ({ isToggle,dark }) => {
   return (
     <div id='home'>
-      <HomeSection isToggle={isToggle}/> 
-       <About isToggle={isToggle}/>
-      <Services isToggle={isToggle}/>
-      <Testimonials isToggle={isToggle}/>
-      <LastBlogs isToggle={isToggle}/>
-      <Contact isToggle={isToggle}/>
-      <Footer isToggle={isToggle}/>
+      <HomeSection isToggle={isToggle} dark={dark}/> 
+      <About isToggle={isToggle} dark={dark}/>
+      <Services isToggle={isToggle} dark={dark}/>
+      <Testimonials isToggle={isToggle} dark={dark}/>
+      <LastBlogs isToggle={isToggle} dark={dark}/>
+      <Contact isToggle={isToggle} dark={dark}/>
+      <Footer isToggle={isToggle} dark={dark}/>
     </div>
   )
 }

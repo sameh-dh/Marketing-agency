@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import blogsData from "./blogsData";
 import { Link } from "react-router-dom";
-function BlogDetail() {
+function BlogDetail({dark}) {
   const [filterblogs, setFilterBlogs] = useState(blogsData);
   const { id } = useParams();
   const blog = blogsData.find((blog) => blog.id === parseInt(id));
@@ -46,7 +46,8 @@ function BlogDetail() {
       <div className="blogDetail">
         <div className="blogD">
           <img src={blog.image} alt={blog.title} className="blogDImage" />
-          <h1 className="blogDTitle">{blog.title}</h1>
+          <h1 className={!dark ?"blogDTitle" : "blogDTitle dark"}>{blog.title}</h1>
+          <div className="blogD-svg-container">
           <svg
             className="testimonials-svg"
             xmlns="http://www.w3.org/2000/svg"
@@ -62,17 +63,18 @@ function BlogDetail() {
               strokeDasharray="30 30"
             />
           </svg>
-          <p className="blogDDescription">{blog.description}</p>
+          </div>
+          <p className={!dark ?"blogDDescription":"blogDDescription dark"}>{blog.description}</p>
         </div>
-        <div className="blog-details-links">Similar links</div>
+        <div className={!dark ? "blog-details-links" :"blog-details-links dark"}>Similar links</div>
 
         <div className="blogs">
           {filterblogs.map((blog) => (
-            <div key={blog.id} className="blog">
+            <div key={blog.id} className={!dark ? 'blog' :'blog dark'}>
               <img src={blog.image} alt={blog.title} className="blogImg" />
-              <div className="blogTitle">{blog.title}</div>
+              <div className={!dark ? 'blogTitle': 'blogTitle dark'}>{blog.title}</div>
 
-              <p className="blogDescription">
+              <p className={!dark ?'blogDescription':'blogDescription dark'}>
                 {blog.description.slice(0, 200)}...
               </p>
               <Link to={`/blog/${blog.id}`}>

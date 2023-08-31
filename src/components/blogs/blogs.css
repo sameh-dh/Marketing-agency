@@ -31,8 +31,20 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px
+    box-shadow: rgba(38, 38, 39, 0.2) 0px 8px 24px 0px
     
+}
+
+.blog.dark {
+    background-color: rgb(26, 25, 25);
+}
+
+.blogTitle.dark {
+    color :rgba(255, 255, 255, 0.859);
+}
+
+.blogDescription.dark {
+    color: rgba(255, 255, 255, 0.859);
 }
 .blogTitle{
     text-decoration: none;
@@ -72,17 +84,17 @@
     margin-right: -12px;
 
 }
-
+.blogButton.dark {
+    color: rgba(255, 255, 255, 0.673);
+    background-color: rgba(86, 85, 85, 0.918);
+}
 .blogButton:hover {
-    background-color: rgba(184, 182, 182, 0.961);
+    background-color: rgba(76, 75, 75, 0.878);
     color: rgb(0, 0, 0);
 
 }
 
-.blogButton:hover {
-    background-color: rgba(184, 182, 182, 0.961);
-    color: rgb(0, 0, 0);
-}
+
 
 
                                    /***********************Blog Detail************************/
@@ -93,13 +105,14 @@
     text-align: center;
     width: 100%;
     height: fit-content;
+    margin-top: 100px;
 }
 .blogD{
     margin: 1% 22%;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
     overflow-x: hidden;
 }
 .blogDImage{
@@ -117,17 +130,29 @@
     font-size: 4rem;
     position: relative;
 }
+
+.blogDTitle.dark {
+    color :white;
+    font-size: 4rem;
+}
 .blogDDescription{
-    font-family: "Lora";
+  
    
     text-align: start;
-    line-height: 260%;
-    font-size: 1.2rem;
+    line-height: 230%;
+    font-size: 1.4rem;
     margin-top: 200px;
+    font-weight: 400;
 }
+
+.blogDDescription.dark {
+    color: rgba(255, 255, 255, 0.835);
+}
+
+
 .testimonials-svg {
     position: absolute;
-    bottom: -150px;
+    bottom: -280px;
     width: 100dvw;
     left: 0;
 }
@@ -160,6 +185,11 @@
     font-family: "Lora";
     font-weight: bold;
     margin-bottom: 50px;
+}
+
+.blog-details-links.dark {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.56);
 }
 @media (max-width: 900px){
     .blogDImage{
@@ -204,7 +234,7 @@ transform: translate(0);
 
 @media screen and (max-width: 1600px) {
    .testimonials-svg {
-    bottom: -250px;
+    bottom: -350px;
    }
 }
 

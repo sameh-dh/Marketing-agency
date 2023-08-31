@@ -6,7 +6,7 @@ import twitter from "../../../images/twitter.png"
 import facebook from "../../../images/facebook.png"
 import instagram from "../../../images/instagram.png"
 import tiktok from "../../../images/tik-tok.png"
-const Advertising = () => {
+const Advertising = ({dark}) => {
     const [views , setViews] = useState([10,50])
     const [price , setPrice] = useState(50)
     const [days, setDays] = useState([1,3])
@@ -57,10 +57,10 @@ const Advertising = () => {
      }
   return (
     <div className='ads-container'>
-        <div className="ads-title">
+        <div className={!dark ? "ads-title":"ads-title dark"}>
         Unlock the power of Ads with Paid social media Advertising
         </div>
-        <div className="ads-card-container">
+        <div className={!dark ? "ads-card-container" : "ads-card-container dark"}>
             <div className="ads-card-title">
                 custumise your offer
                 <div className="ads-card-circle1"></div>
@@ -82,7 +82,7 @@ const Advertising = () => {
             <img src={plus} onClick={()=>daysCounter()}></img>
             </div>
             <div className='ads-card-option1'>Custom Audiance</div>
-            <button className="ads-card-reserve">Reserve</button>
+            <a href={`/Reserve/${"logo"}`}><button className={!dark ? "ads-card-reserve":"ads-card-reserve dark"}>Reserve</button></a>
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>

@@ -6,7 +6,7 @@ import twitter from "../../../images/twitter.png"
 import facebook from "../../../images/facebook.png"
 import instagram from "../../../images/instagram.png"
 import tiktok from "../../../images/tik-tok.png"
-const Logo = () => {
+const Logo = ({dark}) => {
     const [views , setViews] = useState([1,50])
     const [price , setPrice] = useState(150)
     const [days, setDays] = useState([2,3])
@@ -44,10 +44,10 @@ const Logo = () => {
      }
   return (
     <div className='ads-container'>
-        <div className="ads-title">
+        <div className={!dark ? "ads-title":"ads-title dark"}>
         Make your own logo 
         </div>
-        <div className="ads-card-container">
+        <div className={!dark ? "ads-card-container":"ads-card-container dark"}>
             <div className="ads-card-title logo">
                 custumise your offer
                 <div className="ads-card-circle1 logo"></div>
@@ -69,7 +69,7 @@ const Logo = () => {
             <img src={minus} onClick={()=>daysCounter()}></img>
             </div>
             <div className='ads-card-option1 logo'>unlimited revesion</div>
-            <button className="ads-card-reserve logo" >Reserve</button>
+            <a href={`/Reserve/${"logo"}`}>  <button className={!dark ? "ads-card-reserve logo":"ads-card-reserve logo dark"} >Reserve</button> </a>
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>

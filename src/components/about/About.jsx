@@ -3,7 +3,7 @@ import './about.css';
 import imgSocialMedia from '../../images/socialmedia.png';
 import imgTeam from '../../images/Team.png';
 
-const About = ({ isToggle }) => {
+const About = ({ isToggle ,dark}) => {
   const AboutPannel = useRef();
  
   useEffect(()=> {
@@ -31,15 +31,15 @@ const About = ({ isToggle }) => {
 
 
   return (
-<div>
-<div className='About-title'><h2 className="Home-sections-title">{isToggle? 'Who we are ?':'Qui sommes-nous?'}</h2></div>
+<div id='About'>
+<div className={!dark ?'About-title' :'About-title dark'}><h2 className="Home-sections-title">{isToggle? 'Who we are ?':'Qui sommes-nous?'}</h2></div>
     <div className="grid-container" ref={AboutPannel}>
 
     <div className="section s1">
       <img src={imgSocialMedia} alt='SocialMediaImg' className='img' />
     </div>
 
-    <div className="section s2">
+    <div className={!dark ?"section s2" : "section s2 dark"}>
     <h2 className='about-title'>{isToggle?
     `Our main priority is to Grow your${<br/>} business. We are:`
     :`Notre principale priorité est de développer votre${<br/>} Nous sommes:`
@@ -59,7 +59,7 @@ const About = ({ isToggle }) => {
      
     </div>
 
-    <div className="section s3">
+    <div className={!dark ? "section s3" : "section s3 dark"}>
 
     <h2 className='about-title'>{isToggle? 'Our Team is Ready to serve':'Notre équipe est prête à servir'}<br/> {isToggle? 'you. We are:':'vous. Nous sommes :'}</h2>
 

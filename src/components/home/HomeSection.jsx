@@ -1,10 +1,10 @@
 import React from 'react'
 
-const HomeSection = ({ isToggle }) => {
+const HomeSection = ({ isToggle,dark }) => {
   return (
-    <div className='HomeSection-container'>
-        <div className='HomeSection-main'>
-       <h1 className='HomeSection-title'>{isToggle? 'Providing The best social media services' : 'Fournir les meilleurs services de médias sociaux'}</h1>
+    <div className={!dark ? 'HomeSection-container': 'HomeSection-container dark' }>
+        <div className={!dark ? 'HomeSection-main': 'HomeSection-main dark'}>
+       <h1 className={!dark ? 'HomeSection-title' :'HomeSection-title dark'}>{isToggle? 'Providing The best social media services' : 'Fournir les meilleurs services de médias sociaux'}</h1>
        <div className='HomeSection-description'>{isToggle? '#Social media marketing agency' : '#Agence de marketing des médias sociaux'} </div>
        <div className='HomeSection-buttons'>
         <button> {isToggle? 'Logo Design' : 'Sesign de Logo'}</button>

@@ -2,7 +2,7 @@ import React ,{useRef, useEffect}from 'react'
 import './footer.css'
 import { FaInstagram, FaEnvelope, FaFacebook } from 'react-icons/fa';
 
-const Footer = ({isToggle}) => {
+const Footer = ({isToggle,dark}) => {
 
   const FooterPannel = useRef();
  
@@ -27,7 +27,7 @@ const Footer = ({isToggle}) => {
     }
   return (
     <>
-    <div className="footer-basic wave wave--top" ref={FooterPannel}>
+    <div className={!dark ? "footer-basic wave wave--top " : "footer-basic wave wave--top dark "} ref={FooterPannel}>
         <footer>
             <ul>
                 <li><a href="#">Home</a></li>

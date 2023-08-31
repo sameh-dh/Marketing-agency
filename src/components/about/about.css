@@ -16,6 +16,10 @@
     margin-top: 70px;
     margin-bottom: 30px;
 }
+
+.About-title.dark {
+    color: white;
+}
 .grid-container-fade-out {
   opacity: 1;
   transform: translate(0);
@@ -40,7 +44,12 @@
         backdrop-filter: blur(40px); */
       
 }
+.s2.dark ,.s3.dark{ 
+    background-color: rgba(7, 7, 7, 0.173);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.719);
 
+}
 
 .s2 h2, .s3 h2{
     margin-top: 10%;

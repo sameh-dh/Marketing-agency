@@ -9,7 +9,7 @@ html {
     margin: 0;  
     padding: 0;
     letter-spacing: 0.1rem;
-    background-color: #fafafac2;
+  
 }
 
 /* * {
@@ -17,6 +17,12 @@ html {
 } */
 .App {
     display: grid;
+    background-color: #fafafac2;
+
+}
+
+.App.dark {
+    background-color: rgb(28, 28, 28);
 }
 html {
     scroll-snap-type: y mandatory;

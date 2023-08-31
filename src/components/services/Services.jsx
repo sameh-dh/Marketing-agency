@@ -4,8 +4,8 @@ import advertisingImg from "../../images/bullhorn.png";
 import socialMediaImg from "../../images/content.png";
 import websiteImg from "../../images/internet.png";
 import logoDesignImg from "../../images/logo-design.png";
-
-const Services = ({ isToggle }) => {
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+const Services = ({ isToggle,dark }) => {
 
 
   const ServicesPannel = useRef();
@@ -33,28 +33,32 @@ const Services = ({ isToggle }) => {
 
 
   return (
-    <div className="sevices" ref={ServicesPannel}>
-      <div className="servicesTitle">
-        <h2 className="Home-sections-title">{isToggle ? 'Our Services':'nos services'}</h2>
+    <div className="sevices" ref={ServicesPannel} id="services">
+      <div className={!dark ? "servicesTitle" : "servicesTitle dark"}>
+        <h2 className={!dark ? "Home-sections-title" :"Home-sections-title dark"}>{isToggle ? 'Our Services':'nos services'}</h2>
        
       </div>
 
       <div className="servicesContainer">
         <section className="servicesSection section1">
+          <a href="/Logo">
           <img
             src={logoDesignImg}
             alt="Logo Design Image"
             className="servicesImg"
           />
+          </a>
           <h4 className="serviceTitleH4">{isToggle? 'Logo Design':'Design de logo'}</h4>
         </section>
 
         <section className="servicesSection section3">
+        <a href="/Social">
           <img
             src={socialMediaImg}
             alt="SocialMedia Image"
             className="servicesImg"
           />
+         </a>
           <h4 className="serviceTitleH4">{isToggle? 'Social media':'Réseau sociaux'}</h4>
         </section>
         <section className="servicesSection section4">
@@ -62,16 +66,19 @@ const Services = ({ isToggle }) => {
           <h4 className="serviceTitleH4">{isToggle? 'Website':'Site web'}</h4>
         </section>
         <section className="servicesSection section2">
+        <a href="/Ads">
           <img
             src={advertisingImg}
             alt="Advertising Image"
             className="servicesImg"
           />
+          </a>
           <h4 className="serviceTitleH4">{isToggle? 'Advertising':'Publicité'}</h4>
         </section>
+        
         <section className="servicesSection section4">
-          <img src={websiteImg} alt="Website Image" className="servicesImg" />
-          <h4 className="serviceTitleH4">{isToggle? 'Website':'Site web'}</h4>
+         <a href="/Seo" ><img src={websiteImg} alt="Website Image" className="servicesImg" /></a>
+          <h4 className="serviceTitleH4">{isToggle? 'Seo':'Seo'}</h4>
         </section>
         <section className="servicesSection section3">
           <img

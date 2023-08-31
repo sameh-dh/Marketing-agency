@@ -121,6 +121,8 @@ transform: translate(0);
     background-size: 20px 20px;
     background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
   }
+
+
   .wave::after {
     height: 40px;
     background-size: 40px 40px;
@@ -140,6 +142,55 @@ transform: translate(0);
     background-image: radial-gradient(circle at 10px 0, white 12px, transparent 13px);
   }
   
+/* Dark mode */
+.wave.dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: fit-content;
+  position: relative;
+
+}
+.wave.dark::before, .wave.dark::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat-x;
+}
+.wave.dark::before {
+  height: 30px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, rgb(28, 28, 28) 13px);
+}
+
+
+.wave.dark::after {
+  height: 40px;
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle at 10px 15px, rgb(28, 28, 28) 12px, transparent 13px);
+}
+.wave--top.dark {
+  background: black;
+}
+.wave--top.dark::before, .wave--top.dark::after {
+  bottom: auto;
+  top: 0;
+}
+.wave--top.dark::before {
+  background-image: radial-gradient(circle at 10px 15px, transparent 12px, rgb(28, 28, 28) 13px);
+}
+.wave--top.dark::after {
+  background-image: radial-gradient(circle at 10px 0, rgb(28, 28, 28) 12px, transparent 13px);
+}
+
+
+
+
+
+
   .content {
     color: #333;
     font-size: 0.8em;
