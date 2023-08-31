@@ -5,7 +5,7 @@ import socialMediaImg from "../../images/content.png";
 import websiteImg from "../../images/internet.png";
 import logoDesignImg from "../../images/logo-design.png";
 
-const Services = () => {
+const Services = ({ isToggle }) => {
 
 
   const ServicesPannel = useRef();
@@ -35,7 +35,7 @@ const Services = () => {
   return (
     <div className="sevices" ref={ServicesPannel}>
       <div className="servicesTitle">
-        <h2 className="Home-sections-title">Our Services</h2>
+        <h2 className="Home-sections-title">{isToggle ? 'Our Services':'nos services'}</h2>
        
       </div>
 
@@ -46,7 +46,7 @@ const Services = () => {
             alt="Logo Design Image"
             className="servicesImg"
           />
-          <h4 className="serviceTitleH4">Logo Design</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Logo Design':'Design de logo'}</h4>
         </section>
 
         <section className="servicesSection section3">
@@ -55,11 +55,11 @@ const Services = () => {
             alt="SocialMedia Image"
             className="servicesImg"
           />
-          <h4 className="serviceTitleH4">Social media</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Social media':'Réseau sociaux'}</h4>
         </section>
         <section className="servicesSection section4">
           <img src={websiteImg} alt="Website Image" className="servicesImg" />
-          <h4 className="serviceTitleH4">Website</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Website':'Site web'}</h4>
         </section>
         <section className="servicesSection section2">
           <img
@@ -67,11 +67,11 @@ const Services = () => {
             alt="Advertising Image"
             className="servicesImg"
           />
-          <h4 className="serviceTitleH4">Advertising</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Advertising':'Publicité'}</h4>
         </section>
         <section className="servicesSection section4">
           <img src={websiteImg} alt="Website Image" className="servicesImg" />
-          <h4 className="serviceTitleH4">Website</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Website':'Site web'}</h4>
         </section>
         <section className="servicesSection section3">
           <img
@@ -79,12 +79,12 @@ const Services = () => {
             alt="SocialMedia Image"
             className="servicesImg"
           />
-          <h4 className="serviceTitleH4">Social media</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Social media':'Réseau sociaux'}</h4>
         </section>
 
         <section className="servicesSection section4">
           <img src={websiteImg} alt="Website Image" className="servicesImg" />
-          <h4 className="serviceTitleH4">Website</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Website':'Site web'}</h4>
         </section>
         <section className="servicesSection section3">
           <img
@@ -92,7 +92,7 @@ const Services = () => {
             alt="SocialMedia Image"
             className="servicesImg"
           />
-          <h4 className="serviceTitleH4">Social media</h4>
+          <h4 className="serviceTitleH4">{isToggle? 'Social media':'Réseau sociaux'}</h4>
         </section>
       </div>
     </div>

@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Contact = () => {
+const Contact = ({isToggle}) => {
     const form = useRef();
     const ContactPannel = useRef();
  
@@ -42,12 +42,12 @@ const Contact = () => {
   
     return (
    <div className='contact-container' ref={ContactPannel}>
-   <div className='contact-title'><h2 className="Home-sections-title">Contact us</h2></div>
+   <div className='contact-title'><h2 className="Home-sections-title">{isToggle?'Contact us':'Contactez-nous'}</h2></div>
    <form ref={form} onSubmit={sendEmail}>
-        <input name="from_name" type="text" class="feedback-input" placeholder="Name" />
+        <input name="from_name" type="text" class="feedback-input" placeholder={isToggle?'Name':'Nom'} />
         <input type="email" name="user_email" class="feedback-input" placeholder="Email"/>
-        <textarea name="message" class="feedback-input" placeholder="Comment"/>
-        <button type="submit" value="Send" className='submit' >Send</button>
+        <textarea name="message" class="feedback-input" placeholder={isToggle?'Comment':'Commentaire'}/>
+        <button type="submit" value="Send" className='submit' >{isToggle?'Send':'Envoyer'}</button>
       </form>
       </div>
     );

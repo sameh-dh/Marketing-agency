@@ -1,4 +1,5 @@
 import './css/App.css';
+import React ,{useState} from 'react'
 import { BrowserRouter as Router ,
    Route, Switch } from 'react-router-dom';
    import Home from "./components/home/Home";
@@ -12,22 +13,28 @@ import Logo from './components/services/logo/Logo';
 import SocialContent from './components/services/socialContent/SocialContent';
 import Reserve from './components/services/Reserve/Reserve';
 function App() {
+  const [isToggle, setIsToggle] = useState(false);
+
+
+    const toggle = () => {
+      setIsToggle(!isToggle);
+    }
   return (
     <Router>
     <div className="App">
-    <Route path="/" exact component={Blogs} />
-    <Route path="/blog/:id" component={BlogDetail} />
+    {/* <Route path="/" exact component={Blogs} />
+    <Route path="/blog/:id" component={BlogDetail} /> */}
 
 
     {/* <Advertising /> */}
-       {/* <Navbar />
+       <Navbar isToggle={isToggle} toggle={toggle}/>
 
   
 
 
-      <Home/> */}
-    {/* <Switch>
-      <Route  path='/home'>
+      <Home  isToggle={isToggle}/>
+    <Switch>
+      {/* <Route  path='/home'>
         <Home />
       </Route>
       <Route path='/about'>
@@ -35,8 +42,8 @@ function App() {
       </Route>
       <Route path='/services'>
         <Services/>
-      </Route>
-    </Switch> */}
+      </Route> */}
+    </Switch>
     </div>
     </Router>
   );

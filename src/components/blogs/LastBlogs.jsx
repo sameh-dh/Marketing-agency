@@ -3,7 +3,9 @@ import "./blogs.css"
 import "./blogsData"
 import blogsData from './blogsData';
 import { Link } from 'react-router-dom';
-const LastBlogs = () => {
+
+
+const LastBlogs = ({isToggle}) => {
 
   const BlgosPannel = useRef();
   const [lastBlogsData, setLastBlogsData] =useState(blogsData.reverse().splice(2))
@@ -31,7 +33,7 @@ const LastBlogs = () => {
   return (
     <div className='lastblogs-container' ref={BlgosPannel}> <div className='blogsC'>
     <div className="blogsTitle">
-        <h2 className="Home-sections-title">Latest Articles in Digital World</h2>
+        <h2 className="Home-sections-title">{isToggle?'Latest Articles in Digital World' :'Derniers articles dans le monde numérique'}</h2>
       </div>
     <div className='blogs'>
     {blogsData.map((blog) => 
@@ -40,12 +42,12 @@ const LastBlogs = () => {
             <div className='blogTitle'>{blog.title}</div>
             
             <p className='blogDescription'>{blog.description.slice(0, 200)}...</p>
-            <Link to={`/blog/${blog.id}`} ><a  className='blogButton'>More</a></Link>
+            <Link to={`/blog/${blog.id}`} ><a  className='blogButton'>{isToggle? 'More':'Plus'}</a></Link>
         </div>
     )}
     </div>
     </div>
-    <Link to={`/blog`} ><div className="allblogs"> see all articles</div></Link> 
+    <Link to={`/blog`} ><div className="allblogs"> {isToggle?'See all articles':'Voir tous les articles'}</div></Link> 
     </div>
   )
 }

@@ -12,7 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80dvh;
+    height: fit-content;
     margin-top: -35px;
     width: 100dvw;
   overflow-x: hidden;

@@ -2,7 +2,9 @@
 import React , {useState,useEffect,useRef} from "react";
 import "./testimonials.css";
 import {TestimonialsData} from "./Data";
-const Testimonials = () => {
+
+
+const Testimonials = ({isToggle}) => {
 
 const  [i, setI] = useState(0)
 const  [j, setJ] = useState(TestimonialsData.length)
@@ -54,7 +56,7 @@ function prev() {
 
   return (
     <div className="testimonials-container" ref={testimonialsPannel}>
-   <div className="testimonials-title"><h2 className="Home-sections-title">Testimonials</h2> </div>
+   <div className="testimonials-title"><h2 className="Home-sections-title">{isToggle? 'Testimonials':'Témoignages'}</h2> </div>
         <div id="box">
           <div class="wrapper">
             <div class="testimonial-container" id="testimonial-container">

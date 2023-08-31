@@ -2,7 +2,7 @@ import React ,{useRef, useEffect}from 'react'
 import './footer.css'
 import { FaInstagram, FaEnvelope, FaFacebook } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = ({isToggle}) => {
 
   const FooterPannel = useRef();
  

@@ -35,6 +35,7 @@
 .navbar-items {
     float: center;
     justify-content: center;
+    display: flex;
 
 }
 
@@ -113,6 +114,24 @@
 
 .navbar-button:hover {
     box-shadow: none;
+}
+
+.switch{
+    font-family: 'Raleway';
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 100px;
+   
+    box-shadow: 43px 51px 50px 0px rgba(0, 0, 0, 0.38);
+    font-size: 18px;
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    position: absolute;
+    top: 10px;
+  background-color: #255277;
+  font-weight: bold;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 /* BREAK POINTS */
