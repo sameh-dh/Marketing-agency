@@ -14,6 +14,9 @@ import Reserve from "./components/services/Reserve/Reserve";
 import Seo from "../src/components/services/SEO/Seo.jsx";
 import Navbar2 from "./components/navbar/Navbar2";
 
+import Web from "./components/services/web/Web";
+
+
 function App() {
   const [isToggle, setIsToggle] = useState(false);
   const [dark, setDark] = useState(false);
@@ -94,6 +97,17 @@ function App() {
           dark={dark} />
         <Reserve  dark={dark}/>
         </Route>
+
+
+
+        <Route path="/Web" > 
+         <Navbar2  isToggle={isToggle}
+          toggle={toggle}
+          funcMode={modeSwitch}
+          dark={dark} />
+        <Web dark={dark}/>
+        </Route>
+
         </Switch>
       </div>
     </Router>

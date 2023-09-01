@@ -30,8 +30,14 @@
 }
 
 .ads-card-container.dark {
-    background-color: rgba(74, 73, 73, 0.749);
+
+    background-color: rgba(74, 73, 73, 0);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    color: rgb(223, 223, 223);
+
 }
+
+
 
 .ads-card-title {
     background-color: #41ABC8;
@@ -185,7 +191,10 @@
 }
 
 .ads-card-reserve.dark {
-    color: rgb(36, 36, 36);
+
+    color: rgba(192, 189, 189, 0.967);
+    box-shadow: none;
+
 }
 
 .ads-card-reserve:hover {

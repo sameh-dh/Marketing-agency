@@ -4,7 +4,7 @@
 body,
 html {
     font-family: "Raleway";
-    height: 100%;
+  background-color:#fafafac2 ;
     width: 100dvw;
     margin: 0;  
     padding: 0;
@@ -16,13 +16,20 @@ html {
     box-sizing: border-box;
 } */
 .App {
+    height: 100%;
     display: grid;
     background-color: #fafafac2;
 
 }
 
 .App.dark {
-    background-color: rgb(28, 28, 28);
+
+    height: 100%;
+    background-color: #211f23;
+    background-image: -moz-radial-gradient(top, circle, #45475b 0%, #201e22 70%);
+    background-image: -webkit-radial-gradient(top, circle, #45475b 0%, #201e22 70%);
+    background-image: radial-gradient(circle at top, #454b5b 0%, #201e22 70%);
+
 }
 html {
     scroll-snap-type: y mandatory;

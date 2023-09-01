@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+
+
+.web-container.group {
+    display: flex;
+  margin: 0 auto;
+  width: 100dvw;
+  max-width: 1200px;
+
+  justify-self: center  ;
+
+  height: 100dvh;
+  align-items: center;
+
+}
+
+.web-container.group.dark {
+color: rgb(229, 227, 227);
+
+}
+
+
+
+.grid-1-5 {
+
+
+  height: fit-content;
+  padding: 1.25em;
+  position: relative;
+   text-align: center;
+  transition: all 0.2s ease-in-out;
+  width: 30%;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+margin-left: 20px;
+line-height: 160%;
+}
+
+
+
+
+
+.web-button {
+  background-color: #0d88ec;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  width: 120px;
+
+  margin: 0 auto;
+  margin-top:50px;
+  margin-bottom:50px ;
+}
+
+.web-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.small {
+  font-size: 0.6125em;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+  .web-container.group {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100dvw;
+    gap: 10px;
+
+  }
+  .grid-1-5 {
+    width: auto;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .web-container.group {
+    display: grid;
+    grid-template-columns:  auto;
+    width: 100dvw;
+    gap: 10px;
+
+  }
+  .grid-1-5 {
+    width: auto;
+    margin-left: 0px;
+  }
+}

@@ -62,7 +62,7 @@ const Services = ({ isToggle,dark }) => {
           <h4 className="serviceTitleH4">{isToggle? 'Social media':'Réseau sociaux'}</h4>
         </section>
         <section className="servicesSection section4">
-          <img src={websiteImg} alt="Website Image" className="servicesImg" />
+        <a href="/Web"> <img src={websiteImg} alt="Website Image" className="servicesImg" /> </a>
           <h4 className="serviceTitleH4">{isToggle? 'Website':'Site web'}</h4>
         </section>
         <section className="servicesSection section2">
