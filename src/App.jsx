@@ -15,6 +15,7 @@ import Seo from "../src/components/services/SEO/Seo.jsx";
 import Navbar2 from "./components/navbar/Navbar2";
 
 import Web from "./components/services/web/Web";
+import Messages from "./components/messages/Messages";
 
 
 function App() {
@@ -108,6 +109,8 @@ function App() {
         <Web dark={dark}/>
         </Route>
 
+      
+         
         </Switch>
       </div>
     </Router>

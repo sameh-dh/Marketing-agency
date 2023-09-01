@@ -2,6 +2,7 @@
 #home {
     width: 100dvw;
     overflow-x: hidden;
+
 }
 .HomeSection-container {
     margin: 0 auto;
@@ -16,6 +17,7 @@
     margin-top: -35px;
     width: 100dvw;
   overflow-x: hidden;
+  
 
 }
 .HomeSection-main {
@@ -72,6 +74,18 @@
     padding-bottom: 80px;
 }
 
+
+
+.uil.uil-comment-notes {
+    position: fixed;
+    right: 20px;;
+    bottom: 80px;
+    font-size: 60px;
+    z-index: 1;
+    color: black;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.65));
+    cursor: pointer;
+}
 
 /* BREAK POINTS */
 
@@ -165,6 +179,10 @@
      .HomeSection-buttons button {
         padding: 15px 10px 15px 10px;
         font-size: 16px;
+    }
+
+    .uil.uil-comment-notes {
+        display:  none;
     }
 }
 

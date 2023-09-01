@@ -1,6 +1,7 @@
-import React from 'react'
-
+import React ,{useState}from 'react'
+import Messages from '../messages/Messages'
 const HomeSection = ({ isToggle,dark }) => {
+  const [show , setShow] =useState(false)
   return (
     <div className={!dark ? 'HomeSection-container': 'HomeSection-container dark' }>
         <div className={!dark ? 'HomeSection-main': 'HomeSection-main dark'}>
@@ -14,7 +15,12 @@ const HomeSection = ({ isToggle,dark }) => {
         <button> {isToggle? 'Content Production' : 'Production de contenu'}</button>
         <button> {isToggle? 'Website Creation' : 'Création de site web'}</button>
        </div>
-       </div>
+       </div>{
+       show? <Messages toggle={isToggle} />: ""
+      }
+       <i class="uil uil-comment-notes" onClick={()=>{
+setShow(!show)
+       }}></i>
         </div>
   )
 }
