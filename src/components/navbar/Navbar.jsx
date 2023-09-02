@@ -100,11 +100,12 @@ const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
                 role="switch"
                 name="theme"
                 value="dark"
+                onChange={()=> {
+                  funcMode(!dark)
+                }}
               />
               <span class="theme__fill"></span>
-              <span class="theme__icon" onClick={()=>{
-              funcMode(!dark)
-            }}>
+              <span class="theme__icon" >
                 <span class="theme__icon-part"></span>
                 <span class="theme__icon-part"></span>
                 <span class="theme__icon-part"></span>
