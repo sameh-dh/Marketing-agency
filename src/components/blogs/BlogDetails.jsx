@@ -4,10 +4,11 @@ import { useParams } from "react-router-dom";
 import blogsData from "./blogsData";
 import { Link } from "react-router-dom";
 function BlogDetail({dark}) {
+  
   const [filterblogs, setFilterBlogs] = useState(blogsData);
   const { id } = useParams();
   const blog = blogsData.find((blog) => blog.id === parseInt(id));
-
+ 
   const newblogs = () => {
     // check if more than 2 tags exist it will show the blog
   

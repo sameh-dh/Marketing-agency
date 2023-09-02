@@ -21,7 +21,7 @@ const Web = ({dark}) => {
 				<li>UI/UX Design</li>
 				<li>3 to 4 pages</li>
 			</ul>
-      <a href={`/Reserve/${"logo"}`} ><div className="web-button">Reserve</div></a>		
+      <a href={`/Reserve/${"Landing page"}`} ><div className="web-button">Reserve</div></a>		
 		</div>
 
 		<div class="grid-1-5">
@@ -34,7 +34,7 @@ const Web = ({dark}) => {
 				<li>6 to 8 pages</li>
         <li>Advanced features</li>
 			</ul>		
-      <a href={`/Reserve/${"logo"}`} ><div className="web-button">reserve</div></a>		
+      <a href={`/Reserve/${"Advanced landing page"}`} ><div className="web-button">reserve</div></a>		
 		</div>
     
 		<div class="grid-1-5">
@@ -48,7 +48,7 @@ const Web = ({dark}) => {
         <li>Admin Dashboard</li>
         <li>Advanced features</li>
 			</ul>		
-			<a href={`/Reserve/${"logo"}`} ><div className="web-button">Reserve</div></a>		
+			<a href={`/Reserve/${"E-Commerce website"}`} ><div className="web-button">Reserve</div></a>		
 		</div>
 		
 		
