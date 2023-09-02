@@ -23,9 +23,8 @@ color: rgb(229, 227, 227);
 
 
 .grid-1-5 {
-
-
-  height: fit-content;
+  height: 400px;
+  /* height: fit-content; */
   padding: 1.25em;
   position: relative;
    text-align: center;

@@ -6,7 +6,7 @@ import twitter from "../../../images/twitter.png"
 import facebook from "../../../images/facebook.png"
 import instagram from "../../../images/instagram.png"
 import tiktok from "../../../images/tik-tok.png"
-const Advertising = ({dark}) => {
+const Advertising = ({dark, isToggle}) => {
     const [views , setViews] = useState([10,50])
     const [price , setPrice] = useState(50)
     const [days, setDays] = useState([1,3])
@@ -58,11 +58,11 @@ const Advertising = ({dark}) => {
   return (
     <div className='ads-container'>
         <div className={!dark ? "ads-title":"ads-title dark"}>
-        Unlock the power of Ads with Paid social media Advertising
+        {isToggle?'Unlock the power of Ads with Paid social media Advertising':'Libérez la puissance des publicités grâce aux médias sociaux payants'}
         </div>
         <div className={!dark ? "ads-card-container" : "ads-card-container dark"}>
             <div className="ads-card-title">
-                custumise your offer
+                {isToggle?'custumise your offer':'Personnalisez votre offre'}
                 <div className="ads-card-circle1"></div>
                 <div className="ads-card-circle2"></div>
                 <div className="ads-card-circle3"></div>
@@ -75,14 +75,20 @@ const Advertising = ({dark}) => {
                 <div className="ads-card-circle10"></div>
             </div>
             <div className="ads-card-price">{price}Dt</div>
-            <div className='ads-card-option1'>{views[0]}k-{views[1]}k views
+            <div className='ads-card-option1'>{views[0]}k-{views[1]}{isToggle?'k views':'k vues'}
             <img src={plus} onClick={()=>viewsCounter()}></img>
             </div>
-            <div className='ads-card-option1'>{days[0]}-{days[1]} Days
+            <div className='ads-card-option1'>{days[0]}-{days[1]} {isToggle?'Days':'Jours'}
             <img src={plus} onClick={()=>daysCounter()}></img>
             </div>
+
+            <div className='ads-card-option1'>{isToggle?'Custom Audiance':'Audiance personnalisée'}</div>
+              <a href={`/Reserve/Ads:${views[0]}k-${views[1]}k views , ${days[0]}-${days[1]} Days`}><button className={!dark ? "ads-card-reserve":"ads-card-reserve dark"}>Reserve</button></a>
+
+
             <div className='ads-card-option1'>Custom Audiance</div>
-            <a href={`/Reserve/Ads:${views[0]}k-${views[1]}k views , ${days[0]}-${days[1]} Days`}><button className={!dark ? "ads-card-reserve":"ads-card-reserve dark"}>Reserve</button></a>
+            <a href={`/Reserve/Ads:${views[0]}k-${views[1]}k views , ${days[0]}-${days[1]} Days`}><button className={!dark ? "ads-card-reserve":"ads-card-reserve dark"}>{isToggle?'Reserve':'Reserver'}</button></a>
+
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>

@@ -5,7 +5,7 @@ import twitter from "../../../images/twitter.png"
 import facebook from "../../../images/facebook.png"
 import instagram from "../../../images/instagram.png"
 import tiktok from "../../../images/tik-tok.png"
-const SocialContent = ({dark}) => {
+const SocialContent = ({dark, isToggle}) => {
 
     const [views , setViews] = useState([6,50])
     const [price , setPrice] = useState(80)
@@ -45,11 +45,11 @@ const SocialContent = ({dark}) => {
   return (
     <div className='ads-container'>
         <div className={!dark ? "ads-title":"ads-title dark"}>
-        Blow your social media content we will Post for you as much as you want .
+        {isToggle?'Blow your social media content we will Post for you as much as you want .':'Soufflez votre contenu de médias sociaux, nous posterons pour vous autant que vous le souhaitez.'}
         </div>
         <div className={!dark ? "ads-card-container logo" : "ads-card-container logo dark"}>
             <div className="ads-card-title logo">
-                custumise your offer
+                {isToggle?'custumise your offer':'Personnalisez votre offre'}
                 <div className="ads-card-circle1 logo"></div>
                 <div className="ads-card-circle2 logo"></div>
                 <div className="ads-card-circle3 logo"></div>
@@ -65,11 +65,13 @@ const SocialContent = ({dark}) => {
             <div className='ads-card-option1 logo'>{views[0]} Posts
             <img src={plus} onClick={()=>viewsCounter()}></img>
             </div>
-            <div className='ads-card-option1 logo'>{days[0]} Weeks
+            <div className='ads-card-option1 logo'>{days[0]} {isToggle?'Weeks':'Semaines'}
             <img src={plus} onClick={()=>daysCounter()}></img>
             </div>
-            <div className='ads-card-option1 logo'>Content creation</div>
-            <a href={`/Reserve/Content creation: ${views[0]} Posts,${days[0]} Weeks`}>  <button className={!dark ? "ads-card-reserve logo ":"ads-card-reserve dark"} >Reserve</button> </a>
+
+            <div className='ads-card-option1 logo'>{isToggle?'Content creation':'Création de contenu'}</div>
+ <a href={`/Reserve/Content creation: ${views[0]} Posts,${days[0]} Weeks`}>  <button className={!dark ? "ads-card-reserve logo ":"ads-card-reserve dark"} >{isToggle?'Reserve':'Réserver'}</button> </a>
+
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>

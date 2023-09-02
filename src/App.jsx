@@ -55,7 +55,7 @@ function App() {
           toggle={toggle}
           funcMode={modeSwitch}
           dark={dark} />
-            <Logo dark={dark} />
+            <Logo dark={dark} isToggle={isToggle}/>
           </Route>
 
           <Route path="/Social">
@@ -63,7 +63,7 @@ function App() {
           toggle={toggle}
           funcMode={modeSwitch}
           dark={dark} />
-            <SocialContent dark={dark} />
+            <SocialContent dark={dark} isToggle={isToggle}/>
           </Route>
 
           <Route path="/Ads">
@@ -71,7 +71,7 @@ function App() {
           toggle={toggle}
           funcMode={modeSwitch}
           dark={dark} />
-            <Advertising dark={dark} />
+            <Advertising dark={dark} isToggle={isToggle}/>
           </Route>
 
           <Route path="/Seo">
@@ -79,7 +79,7 @@ function App() {
           toggle={toggle}
           funcMode={modeSwitch}
           dark={dark} />
-            <Seo dark={dark} />
+            <Seo dark={dark} isToggle={isToggle}/>
           </Route>
 
         <Route path="/blog/:id" > 
@@ -96,7 +96,7 @@ function App() {
           toggle={toggle}
           funcMode={modeSwitch}
           dark={dark} />
-        <Reserve  dark={dark}/>
+        <Reserve  dark={dark} isToggle={isToggle}/>
         </Route>
 
 
@@ -106,7 +106,7 @@ function App() {
           toggle={toggle}
           funcMode={modeSwitch}
           dark={dark} />
-        <Web dark={dark}/>
+        <Web dark={dark} isToggle={isToggle}/>
         </Route>
 
       
