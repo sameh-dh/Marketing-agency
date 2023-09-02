@@ -37,10 +37,7 @@ const Reserve = ({dark, isToggle}) => {
         <textarea name="message" className="feedback-input" placeholder={isToggle?'Comment':'Commentaire'}/>
         <button type="submit" value="Send" className='submit' >{isToggle?'Send':'Envoyer'}</button>
 
-        <input type="text" name="user_service" className="feedback-input" value={choice}/>
-        <input type="text" name="user_number" className="feedback-input" placeholder="Phone number"/>
-        <textarea name="message" className="feedback-input" placeholder="Comment"/>
-        <button type="submit" value="Send" className='submit' >Send</button>
+     
 
       </form>
       </div>
