@@ -86,8 +86,7 @@ const Advertising = ({dark, isToggle}) => {
               <a href={`/Reserve/Ads:${views[0]}k-${views[1]}k views , ${days[0]}-${days[1]} Days`}><button className={!dark ? "ads-card-reserve":"ads-card-reserve dark"}>Reserve</button></a>
 
 
-            <div className='ads-card-option1'>Custom Audiance</div>
-            <a href={`/Reserve/Ads:${views[0]}k-${views[1]}k views , ${days[0]}-${days[1]} Days`}><button className={!dark ? "ads-card-reserve":"ads-card-reserve dark"}>{isToggle?'Reserve':'Reserver'}</button></a>
+           
 
 
         <div className="social-media">
