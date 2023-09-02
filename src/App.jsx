@@ -109,7 +109,13 @@ function App() {
         <Web dark={dark} isToggle={isToggle}/>
         </Route>
 
-      
+        <Route path="/Web" > 
+         <Navbar2  isToggle={isToggle}
+          toggle={toggle}
+          funcMode={modeSwitch}
+          dark={dark} />
+        <Advertising dark={dark} isToggle={isToggle}/>
+        </Route>
          
         </Switch>
       </div>
